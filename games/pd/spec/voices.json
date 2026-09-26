@@ -1,0 +1,3290 @@
+{
+"a51elv01.mp3": {
+"secs": 3.631,
+"rate": 22050,
+"text": "Oh no, we have a problem! It's a single seater!",
+"f0": 301.9
+},
+"a51elv02.mp3": {
+"secs": 2.508,
+"rate": 22050,
+"text": "Two can get in, but no more!",
+"f0": 326.5
+},
+"a51elv03.mp3": {
+"secs": 3.239,
+"rate": 22050,
+"text": "Plus it's got no style, you know what I'm saying?",
+"f0": 237.1
+},
+"a51grd01.mp3": {
+"secs": 0.81,
+"rate": 22050,
+"text": "How's things?",
+"f0": 81.2
+},
+"a51grd02.mp3": {
+"secs": 0.679,
+"rate": 22050,
+"text": "Hey there!",
+"f0": null
+},
+"a51grd03.mp3": {
+"secs": 1.384,
+"rate": 22050,
+"text": "Hi, how are you?",
+"f0": 235.3
+},
+"a51grd04.mp3": {
+"secs": 1.306,
+"rate": 22050,
+"text": "Where did you get that?",
+"f0": 152.4
+},
+"a51grd05.mp3": {
+"secs": 1.254,
+"rate": 22050,
+"text": "Should you have that?",
+"f0": 135.6
+},
+"a51grd06.mp3": {
+"secs": 1.646,
+"rate": 22050,
+"text": "What are you doing with that weapon?",
+"f0": 235.3
+},
+"a51grd07.mp3": {
+"secs": 1.384,
+"rate": 22050,
+"text": "Don't point that at me!",
+"f0": 164.9
+},
+"a51grd08.mp3": {
+"secs": 1.306,
+"rate": 22050,
+"text": "Watch where you're pointing that.",
+"f0": 146.8
+},
+"a51grd09.mp3": {
+"secs": 0.993,
+"rate": 22050,
+"text": "Impostor!",
+"f0": 266.7
+},
+"a51grd10.mp3": {
+"secs": 1.123,
+"rate": 22050,
+"text": "That's a spy!",
+"f0": 266.7
+},
+"a51jo1.mp3": {
+"secs": 1.567,
+"rate": 22050,
+"text": "It's the only way out of here.",
+"f0": 242.4
+},
+"a51jo2.mp3": {
+"secs": 2.56,
+"rate": 22050,
+"text": "You're the only one who can fly it, Elvis, so get in!",
+"f0": 207.8
+},
+"a51jo3.mp3": {
+"secs": 1.75,
+"rate": 22050,
+"text": "But we can't leave you behind!",
+"f0": 228.6
+},
+"a51jo4.mp3": {
+"secs": 1.75,
+"rate": 22050,
+"text": "There must be a way out of here.",
+"f0": 210.5
+},
+"a51jo5.mp3": {
+"secs": 1.254,
+"rate": 22050,
+"text": "I don't have much time.",
+"f0": null
+},
+"a51jo6.mp3": {
+"secs": 3.056,
+"rate": 22050,
+"text": "Jonathan, go with Elvis. I'll see to the consoles.",
+"f0": 231.9
+},
+"a51jon01.mp3": {
+"secs": 3.187,
+"rate": 22050,
+"text": "Joanna, this is Jonathan. You're in grave danger.",
+"f0": 666.7
+},
+"a51jon02.mp3": {
+"secs": 2.116,
+"rate": 22050,
+"text": "They flitted the area with nerve gas.",
+"f0": 166.7
+},
+"a51jon03.mp3": {
+"secs": 2.821,
+"rate": 22050,
+"text": "Get a friend to the containment lab. There's a hiding place there.",
+"f0": 172.0
+},
+"a51jon04.mp3": {
+"secs": 2.429,
+"rate": 22050,
+"text": "I'll contact you when you get there. Good luck.",
+"f0": 179.8
+},
+"a51jon05.mp3": {
+"secs": 4.31,
+"rate": 22050,
+"text": "Good work, Joe. We need to meet up. They're getting suspicious of me.",
+"f0": 425.3
+},
+"a51jon06.mp3": {
+"secs": 3.709,
+"rate": 22050,
+"text": "Use the maintenance hatch, I've opened the one of the containment labs. Hurry!",
+"f0": 136.8
+},
+"a51jon07.mp3": {
+"secs": 1.567,
+"rate": 22050,
+"text": "Joanna, over here!",
+"f0": 235.3
+},
+"a51jon08.mp3": {
+"secs": 1.437,
+"rate": 22050,
+"text": "We need to get back to our friend!",
+"f0": 161.6
+},
+"a51jon09.mp3": {
+"secs": 1.959,
+"rate": 22050,
+"text": "Right, we're near. Come with me, Joe.",
+"f0": 145.5
+},
+"a51jon10.mp3": {
+"secs": 1.176,
+"rate": 22050,
+"text": "Okay, stand back!",
+"f0": 210.5
+},
+"a51jon11.mp3": {
+"secs": 1.62,
+"rate": 22050,
+"text": "Okay, Joe, let's go!",
+"f0": 121.2
+},
+"a51jon12.mp3": {
+"secs": 1.567,
+"rate": 22050,
+"text": "Dammit Joanna, cover me!",
+"f0": 222.2
+},
+"a51jon14.mp3": {
+"secs": 2.691,
+"rate": 22050,
+"text": "One of us will have to stay behind and open the hang of doors.",
+"f0": 128.0
+},
+"a51jon15.mp3": {
+"secs": 3.683,
+"rate": 22050,
+"text": "I'll get out on that hover bike. Now cover me while I open the doors.",
+"f0": 152.4
+},
+"a51sci1.mp3": {
+"secs": 2.247,
+"rate": 22050,
+"text": "Hey, that's not Harry! It's an intruder!",
+"f0": 228.6
+},
+"af1jo01.mp3": {
+"secs": 3.37,
+"rate": 22050,
+"text": "Mr President, you're in danger! Trent is trying to kidnap you!",
+"f0": 246.2
+},
+"af1jo02.mp3": {
+"secs": 3.631,
+"rate": 22050,
+"text": "This is a recording of a meeting between Trent and the other conspirators.",
+"f0": 200.0
+},
+"af1jo03.mp3": {
+"secs": 2.821,
+"rate": 22050,
+"text": "We have to get you to the escape pod. Follow me.",
+"f0": 266.7
+},
+"af1pr01.mp3": {
+"secs": 2.612,
+"rate": 22050,
+"text": "I don't believe this is happening!",
+"f0": 235.3
+},
+"af1pr02.mp3": {
+"secs": 1.306,
+"rate": 22050,
+"text": "STOP SHOOTING!",
+"f0": 323.3
+},
+"af1pr03.mp3": {
+"secs": 2.377,
+"rate": 22050,
+"text": "You're sure this is the way to the escape pod?",
+"f0": 144.1
+},
+"af1pr04.mp3": {
+"secs": 1.176,
+"rate": 22050,
+"text": "I've been hit!",
+"f0": 288.3
+},
+"af1pr05.mp3": {
+"secs": 1.75,
+"rate": 22050,
+"text": "Why are they shooting at me?",
+"f0": 258.1
+},
+"af1pr06.mp3": {
+"secs": 1.75,
+"rate": 22050,
+"text": "Security! Security!",
+"f0": 275.9
+},
+"af1pr07.mp3": {
+"secs": 1.437,
+"rate": 22050,
+"text": "Who are you, young lady?",
+"f0": 105.3
+},
+"af1pr08.mp3": {
+"secs": 5.799,
+"rate": 22050,
+"text": "You can't make accusations like that without evidence. I assume that you have some.",
+"f0": 112.7
+},
+"af1pr09.mp3": {
+"secs": 5.381,
+"rate": 22050,
+"text": "It seems... overwhelming. I'm in your hands. What do we do now?",
+"f0": 105.3
+},
+"af1pr10.mp3": {
+"secs": 1.802,
+"rate": 22050,
+"text": "What the hell was that?",
+"f0": 238.8
+},
+"af1tr01.mp3": {
+"secs": 2.821,
+"rate": 22050,
+"text": "How the hell did you get on board?",
+"f0": 156.9
+},
+"af1tr02.mp3": {
+"secs": 2.116,
+"rate": 22050,
+"text": "You'll never see them now!",
+"f0": 132.2
+},
+"af1tr03.mp3": {
+"secs": 2.56,
+"rate": 22050,
+"text": "Ha ha ha ha ha!",
+"f0": 347.8
+},
+"airbgd01.mp3": {
+"secs": 0.758,
+"rate": 22050,
+"text": "Aye there!",
+"f0": 166.7
+},
+"airbgd02.mp3": {
+"secs": 1.071,
+"rate": 22050,
+"text": "How's things?",
+"f0": 168.4
+},
+"airbgd03.mp3": {
+"secs": 1.959,
+"rate": 22050,
+"text": "Where are you taking that weapon?",
+"f0": 231.9
+},
+"airbgd04.mp3": {
+"secs": 2.194,
+"rate": 22050,
+"text": "Get that firearm approved now!",
+"f0": 235.3
+},
+"airbgd05.mp3": {
+"secs": 1.437,
+"rate": 22050,
+"text": "Hey, whatcha doin' with that?",
+"f0": 400.0
+},
+"airbgd06.mp3": {
+"secs": 1.254,
+"rate": 22050,
+"text": "Be careful!",
+"f0": 222.2
+},
+"airbgd07.mp3": {
+"secs": 1.254,
+"rate": 22050,
+"text": "Stop right there!",
+"f0": 372.1
+},
+"airbgd08.mp3": {
+"secs": 1.384,
+"rate": 22050,
+"text": "TRAP THE GUN!",
+"f0": 202.6
+},
+"airbgd09.mp3": {
+"secs": 0.679,
+"rate": 22050,
+"text": "Hello!",
+"f0": 156.9
+},
+"airbgd10.mp3": {
+"secs": 1.071,
+"rate": 22050,
+"text": "Hey, what's up?",
+"f0": 103.9
+},
+"airbgd11.mp3": {
+"secs": 1.384,
+"rate": 22050,
+"text": "Do you have permission for that?",
+"f0": 127.0
+},
+"airbgd12.mp3": {
+"secs": 1.62,
+"rate": 22050,
+"text": "What are you doing with that gun?",
+"f0": 179.8
+},
+"airbgd13.mp3": {
+"secs": 1.75,
+"rate": 22050,
+"text": "Hey! That's dangerous!",
+"f0": 254.0
+},
+"airbgd14.mp3": {
+"secs": 2.116,
+"rate": 22050,
+"text": "Watch it! That thing could go off!",
+"f0": 200.0
+},
+"airbgd15.mp3": {
+"secs": 1.646,
+"rate": 22050,
+"text": "Put your hands up!",
+"f0": 213.3
+},
+"airbgd16.mp3": {
+"secs": 1.306,
+"rate": 22050,
+"text": "It's a terrorist!",
+"f0": 280.7
+},
+"airstw01.mp3": {
+"secs": 2.064,
+"rate": 22050,
+"text": "Look out! It's an intruder!",
+"f0": 695.7
+},
+"airstw02.mp3": {
+"secs": 1.071,
+"rate": 22050,
+"text": "Is he okay?",
+"f0": 640.0
+},
+"airstw03.mp3": {
+"secs": 1.254,
+"rate": 22050,
+"text": "I don't get some help!",
+"f0": 666.7
+},
+"assael01.mp3": {
+"secs": 4.362,
+"rate": 22050,
+"text": "We're outside, Joanna! Get the shields down and we can help you!",
+"f0": 432.4
+},
+"assael02.mp3": {
+"secs": 3.396,
+"rate": 22050,
+"text": "You've got to open the hang of doors so we can dock!",
+"f0": 296.3
+},
+"assael03.mp3": {
+"secs": 1.489,
+"rate": 22050,
+"text": "Good to see you, Joanne!",
+"f0": 262.3
+},
+"assael04.mp3": {
+"secs": 2.743,
+"rate": 22050,
+"text": "Take this! You should find it useful!",
+"f0": 275.9
+},
+"assael05.mp3": {
+"secs": 3.631,
+"rate": 22050,
+"text": "Look out Joanna! I think we've made them angry!",
+"f0": 367.9
+},
+"assael06.mp3": {
+"secs": 4.441,
+"rate": 22050,
+"text": "Time to head upwards! I'll take this lift, you take the other one!",
+"f0": 333.3
+},
+"bnblde01.mp3": {
+"secs": 2.743,
+"rate": 22050,
+"text": "Go to the helipad, if you want to live.",
+"f0": 103.9
+},
+"bncass01.mp3": {
+"secs": 1.62,
+"rate": 22050,
+"text": "Get the hell out of my office!",
+"f0": 533.3
+},
+"bsewrk01.mp3": {
+"secs": 3.135,
+"rate": 22050,
+"text": "Hey! You! This is a restricted area!",
+"f0": 307.7
+},
+"bsewrk02.mp3": {
+"secs": 1.384,
+"rate": 22050,
+"text": "Are you new around here?",
+"f0": 146.8
+},
+"bsewrk03.mp3": {
+"secs": 1.933,
+"rate": 22050,
+"text": "Hey! Give me that right case!",
+"f0": 296.3
+},
+"bsewrk04.mp3": {
+"secs": 1.881,
+"rate": 22050,
+"text": "Upstairs, there's an intruder!",
+"f0": 275.9
+},
+"bsewrk05.mp3": {
+"secs": 2.299,
+"rate": 22050,
+"text": "You get security. I'll deal with her.",
+"f0": 166.7
+},
+"carrbye02.mp3": {
+"secs": 2.873,
+"rate": 22050,
+"text": "Okay Joe, I'll leave you to prepare for the mission.",
+"f0": 112.3
+},
+"cetael01.mp3": {
+"secs": 4.31,
+"rate": 22050,
+"text": "Here, kick the gun! Kick those skin off my back while I'm working!",
+"f0": 280.7
+},
+"chdroid1.mp3": {
+"secs": 1.802,
+"rate": 22050,
+"text": "Stop where you are!",
+"f0": 231.9
+},
+"chdroid2.mp3": {
+"secs": 1.646,
+"rate": 22050,
+"text": "ALERT! HONOR ATTACK!",
+"f0": 329.9
+},
+"cicarr06.mp3": {
+"secs": 1.071,
+"rate": 22050,
+"text": "Hello Joanna!",
+"f0": 174.2
+},
+"cicarr07.mp3": {
+"secs": 2.247,
+"rate": 22050,
+"text": "Joanna, it's good to see you.",
+"f0": 213.3
+},
+"cicarr08.mp3": {
+"secs": 1.176,
+"rate": 22050,
+"text": "Good day to you, Joe.",
+"f0": 131.1
+},
+"cicarr09.mp3": {
+"secs": 2.821,
+"rate": 22050,
+"text": "I thought you'd be a little more professional by now.",
+"f0": 104.6
+},
+"cicarr10.mp3": {
+"secs": 1.881,
+"rate": 22050,
+"text": "Act your age, Joanna.",
+"f0": 89.4
+},
+"cicarr11.mp3": {
+"secs": 3.239,
+"rate": 22050,
+"text": "Please don't do that, Joanna. It worries me.",
+"f0": 122.1
+},
+"cifarr01.mp3": {
+"secs": 2.821,
+"rate": 22050,
+"text": "Foster was looking for you. He's in the firing range.",
+"f0": 231.9
+},
+"cifarr02.mp3": {
+"secs": 1.384,
+"rate": 22050,
+"text": "Come to see me for some training.",
+"f0": 296.3
+},
+"cifarr03.mp3": {
+"secs": 1.254,
+"rate": 22050,
+"text": "Practice makes perfect!",
+"f0": 258.1
+},
+"cifarr08.mp3": {
+"secs": 0.627,
+"rate": 22050,
+"text": "Hi there!",
+"f0": 333.3
+},
+"cifarr12.mp3": {
+"secs": 2.299,
+"rate": 22050,
+"text": "I just don't have the patience for this.",
+"f0": 231.9
+},
+"cifema01.mp3": {
+"secs": 0.627,
+"rate": 22050,
+"text": "Hello!",
+"f0": 254.0
+},
+"cifema04.mp3": {
+"secs": 0.94,
+"rate": 22050,
+"text": "Hi Joe!",
+"f0": 400.0
+},
+"cifema07.mp3": {
+"secs": 0.94,
+"rate": 22050,
+"text": "How's it going?",
+"f0": 242.4
+},
+"cifema08.mp3": {
+"secs": 1.646,
+"rate": 22050,
+"text": "Leave me alone.",
+"f0": 250.0
+},
+"cifema09.mp3": {
+"secs": 1.75,
+"rate": 22050,
+"text": "Don't you have to be somewhere?",
+"f0": 400.0
+},
+"cifema14.mp3": {
+"secs": 1.489,
+"rate": 22050,
+"text": "By someone else, would you?",
+"f0": 301.9
+},
+"cifost08.mp3": {
+"secs": 1.567,
+"rate": 22050,
+"text": "Ah, a star agent!",
+"f0": 192.8
+},
+"cifost12.mp3": {
+"secs": 1.933,
+"rate": 22050,
+"text": "Just leave me alone, would you?",
+"f0": 280.7
+},
+"cigrim01.mp3": {
+"secs": 3.318,
+"rate": 22050,
+"text": "Know your enemy. That's what I always say.",
+"f0": 235.3
+},
+"cigrim03.mp3": {
+"secs": 4.18,
+"rate": 22050,
+"text": "If you hear any info let me know, okay? I'm all ears!",
+"f0": 195.1
+},
+"cigrim04.mp3": {
+"secs": 4.18,
+"rate": 22050,
+"text": "Find out as much as you can, Joanna. There's a gap in my records.",
+"f0": 188.2
+},
+"cigrim05.mp3": {
+"secs": 2.56,
+"rate": 22050,
+"text": "Welcome to Hackers Central!",
+"f0": 195.1
+},
+"cigrim06.mp3": {
+"secs": 1.176,
+"rate": 22050,
+"text": "Hi there.",
+"f0": 183.9
+},
+"cigrim07.mp3": {
+"secs": 2.116,
+"rate": 22050,
+"text": "Oh, ehh, hi.",
+"f0": 197.5
+},
+"cigrim08.mp3": {
+"secs": 3.135,
+"rate": 22050,
+"text": "Bug off or I'll transfer security clearance.",
+"f0": 177.8
+},
+"cigrim09.mp3": {
+"secs": 2.926,
+"rate": 22050,
+"text": "You want a criminal record? I can do that.",
+"f0": 219.2
+},
+"cigrim10.mp3": {
+"secs": 1.123,
+"rate": 22050,
+"text": "A user!",
+"f0": 258.1
+},
+"cihopk01.mp3": {
+"secs": 1.62,
+"rate": 22050,
+"text": "Some last minute training, huh?",
+"f0": 301.9
+},
+"cihopk04.mp3": {
+"secs": 1.567,
+"rate": 22050,
+"text": "Practice makes perfect, huh?",
+"f0": 246.2
+},
+"cihopk06.mp3": {
+"secs": 3.135,
+"rate": 22050,
+"text": "Don't you have a life? Stupid question, I suppose.",
+"f0": 197.6
+},
+"cihopk09.mp3": {
+"secs": 1.802,
+"rate": 22050,
+"text": "Hi! What can I do for you?",
+"f0": 278.8
+},
+"cihopk11.mp3": {
+"secs": 2.612,
+"rate": 22050,
+"text": "It's really sweet of you to be so irritating.",
+"f0": 202.5
+},
+"cimale02.mp3": {
+"secs": 0.627,
+"rate": 22050,
+"text": "Hey there!",
+"f0": 196.3
+},
+"cimale03.mp3": {
+"secs": 0.496,
+"rate": 22050,
+"text": "Bye!",
+"f0": null
+},
+"cimale07.mp3": {
+"secs": 0.81,
+"rate": 22050,
+"text": "How's it going?",
+"f0": 131.7
+},
+"cimale09.mp3": {
+"secs": 1.437,
+"rate": 22050,
+"text": "Then you have to be somewhere.",
+"f0": 161.6
+},
+"cimale11.mp3": {
+"secs": 1.123,
+"rate": 22050,
+"text": "I'm being harassed!",
+"f0": 285.7
+},
+"cimale13.mp3": {
+"secs": 1.959,
+"rate": 22050,
+"text": "That's very disturbing behaviour.",
+"f0": 86.0
+},
+"ciroge01.mp3": {
+"secs": 1.75,
+"rate": 22050,
+"text": "Just don't screw up, okay?",
+"f0": 162.9
+},
+"ciroge02.mp3": {
+"secs": 2.247,
+"rate": 22050,
+"text": "I just cleaned up, so don't make a mess.",
+"f0": 144.1
+},
+"ciroge08.mp3": {
+"secs": 0.94,
+"rate": 22050,
+"text": "What do you want?",
+"f0": 131.7
+},
+"ciroge12.mp3": {
+"secs": 1.802,
+"rate": 22050,
+"text": "I'm surprised you lived this long.",
+"f0": 98.8
+},
+"csec01.mp3": {
+"secs": 1.75,
+"rate": 22050,
+"text": "Look out! She's got a gun!",
+"f0": 666.7
+},
+"csec02.mp3": {
+"secs": 1.123,
+"rate": 22050,
+"text": "Please don't kill me!",
+"f0": 533.3
+},
+"csec03.mp3": {
+"secs": 1.176,
+"rate": 22050,
+"text": "DON'T SHOOT!",
+"f0": 551.7
+},
+"cstan1.mp3": {
+"secs": 2.926,
+"rate": 22050,
+"text": "Attention all personnel.",
+"f0": 129.0
+},
+"cstan2.mp3": {
+"secs": 3.135,
+"rate": 22050,
+"text": "Locate and Afterhand future dip.",
+"f0": 145.5
+},
+"devr01.mp3": {
+"secs": 1.62,
+"rate": 22050,
+"text": "How dare you disturb me!",
+"f0": 183.9
+},
+"devr02.mp3": {
+"secs": 2.194,
+"rate": 22050,
+"text": "You will regret this intrusion, girl!",
+"f0": 216.2
+},
+"devr03.mp3": {
+"secs": 1.802,
+"rate": 22050,
+"text": "Who are you and what are you doing here?",
+"f0": 228.6
+},
+"devr04.mp3": {
+"secs": 2.508,
+"rate": 22050,
+"text": "You won't shoot me, foolish child!",
+"f0": 195.2
+},
+"devr05.mp3": {
+"secs": 1.802,
+"rate": 22050,
+"text": "Don't you know who I am?",
+"f0": 307.7
+},
+"devr06.mp3": {
+"secs": 2.377,
+"rate": 22050,
+"text": "Let's see how you deal with security.",
+"f0": 192.8
+},
+"devr07.mp3": {
+"secs": 2.194,
+"rate": 22050,
+"text": "If I were you, I'd leave. Now!",
+"f0": 222.2
+},
+"devr08.mp3": {
+"secs": 2.299,
+"rate": 22050,
+"text": "You've become quite an annoyance.",
+"f0": 252.0
+},
+"devr09.mp3": {
+"secs": 1.959,
+"rate": 22050,
+"text": "We meet again, girl!",
+"f0": 231.9
+},
+"devr10.mp3": {
+"secs": 1.567,
+"rate": 22050,
+"text": "Good night, Miss Dark.",
+"f0": 147.5
+},
+"devr11.mp3": {
+"secs": 0.94,
+"rate": 22050,
+"text": "Get her!",
+"f0": 340.4
+},
+"devr12.mp3": {
+"secs": 2.926,
+"rate": 22050,
+"text": "Ha ha ha ha ha ha ha ha ha",
+"f0": 340.6
+},
+"elvcet01.mp3": {
+"secs": 2.429,
+"rate": 22050,
+"text": "Time to reactivate those teleportals!",
+"f0": 235.3
+},
+"elvcet02.mp3": {
+"secs": 3.997,
+"rate": 22050,
+"text": "It looks like this would benefit from a little bit of sabotage.",
+"f0": 228.6
+},
+"exec01.mp3": {
+"secs": 1.489,
+"rate": 22050,
+"text": "But don't shoot, don't shoot!",
+"f0": 238.8
+},
+"exec02.mp3": {
+"secs": 1.437,
+"rate": 22050,
+"text": "I'll do what you want!",
+"f0": 250.0
+},
+"exec04.mp3": {
+"secs": 1.567,
+"rate": 22050,
+"text": "Help! Intruder!",
+"f0": 296.3
+},
+"exec05.mp3": {
+"secs": 1.254,
+"rate": 22050,
+"text": "Log in on now.",
+"f0": 104.6
+},
+"exec06.mp3": {
+"secs": 1.489,
+"rate": 22050,
+"text": "Okay, I'm in.",
+"f0": 96.4
+},
+"exec07.mp3": {
+"secs": 2.508,
+"rate": 22050,
+"text": "Goodbye, Dr. Carroll.",
+"f0": 115.9
+},
+"exec08.mp3": {
+"secs": 1.62,
+"rate": 22050,
+"text": "I'm logging on now.",
+"f0": 139.1
+},
+"exec09.mp3": {
+"secs": 1.62,
+"rate": 22050,
+"text": "Right, I-I-I'm in.",
+"f0": 159.2
+},
+"exec10.mp3": {
+"secs": 6.06,
+"rate": 22050,
+"text": "Yes, yes, I agree. Personality is expendable in this case.",
+"f0": 95.0
+},
+"exec11.mp3": {
+"secs": 6.504,
+"rate": 22050,
+"text": "No, I can start the process from my office terminal and delete the necessary files at the same time.",
+"f0": 100.6
+},
+"exec12.mp3": {
+"secs": 2.064,
+"rate": 22050,
+"text": "I'll begin at once. Goodbye.",
+"f0": 95.8
+},
+"exec13.mp3": {
+"secs": 1.75,
+"rate": 22050,
+"text": "Security, help me!",
+"f0": 340.4
+},
+"exec14.mp3": {
+"secs": 1.646,
+"rate": 22050,
+"text": "Help! Help!",
+"f0": 347.8
+},
+"helic01.mp3": {
+"secs": 2.299,
+"rate": 22050,
+"text": "Surrender or die, fugitive!",
+"f0": 296.3
+},
+"helic02.mp3": {
+"secs": 2.508,
+"rate": 22050,
+"text": "This is your final warning!",
+"f0": 320.0
+},
+"helic03.mp3": {
+"secs": 1.881,
+"rate": 22050,
+"text": "Get up now!",
+"f0": 359.6
+},
+"hologd01.mp3": {
+"secs": 1.62,
+"rate": 22050,
+"text": "There's no escape for you!",
+"f0": 181.8
+},
+"holohopk.mp3": {
+"secs": 1.646,
+"rate": 22050,
+"text": "Ha! Catch me if you can!",
+"f0": 290.9
+},
+"invcar01.mp3": {
+"secs": 2.194,
+"rate": 22050,
+"text": "Joanna, what under attack?",
+"f0": 290.9
+},
+"invcar02.mp3": {
+"secs": 2.299,
+"rate": 22050,
+"text": "Get the gun, Spocko-line! Honey!",
+"f0": 235.3
+},
+"invcar03.mp3": {
+"secs": 2.116,
+"rate": 22050,
+"text": "The schedule has taken hostages!",
+"f0": 666.7
+},
+"invcar04.mp3": {
+"secs": 2.299,
+"rate": 22050,
+"text": "Get up to the offices and save them!",
+"f0": 242.4
+},
+"invcar05.mp3": {
+"secs": 2.821,
+"rate": 22050,
+"text": "They're using a new form of shield technology!",
+"f0": 200.0
+},
+"invcar06.mp3": {
+"secs": 2.873,
+"rate": 22050,
+"text": "Foster was working on a new weapon, which may be useful.",
+"f0": 160.0
+},
+"invcar07.mp3": {
+"secs": 3.866,
+"rate": 22050,
+"text": "Damn it! My office! If they get access!",
+"f0": 666.7
+},
+"invcar08.mp3": {
+"secs": 2.377,
+"rate": 22050,
+"text": "Get there first, Joel, and destroy the files!",
+"f0": 202.5
+},
+"invcar09.mp3": {
+"secs": 3.004,
+"rate": 22050,
+"text": "Things are desperate. They've planted a bomb.",
+"f0": 217.7
+},
+"invcar10.mp3": {
+"secs": 2.377,
+"rate": 22050,
+"text": "Find it and get it out of the building.",
+"f0": 194.0
+},
+"invcar11.mp3": {
+"secs": 2.612,
+"rate": 22050,
+"text": "Well done, Joanna. We're nearly clear.",
+"f0": 193.9
+},
+"invcar12.mp3": {
+"secs": 2.743,
+"rate": 22050,
+"text": "The last dropship is waiting for you. Hurry!",
+"f0": 200.0
+},
+"invfarr.mp3": {
+"secs": 1.62,
+"rate": 22050,
+"text": "Thanks for coming back for me Joanna.",
+"f0": 254.0
+},
+"invfema.mp3": {
+"secs": 0.679,
+"rate": 22050,
+"text": "Thanks!",
+"f0": 179.8
+},
+"invfost.mp3": {
+"secs": 2.116,
+"rate": 22050,
+"text": "I knew I could rely on you, Joanna!",
+"f0": 200.0
+},
+"invgrim.mp3": {
+"secs": 4.754,
+"rate": 22050,
+"text": "That was too close, I nearly had to take them out myself.",
+"f0": 202.5
+},
+"invhopk.mp3": {
+"secs": 2.508,
+"rate": 22050,
+"text": "Quick, let's get to the hangar. And thanks.",
+"f0": 266.7
+},
+"invmale.mp3": {
+"secs": 0.94,
+"rate": 22050,
+"text": "Thanks, Joe.",
+"f0": 120.8
+},
+"joexec01.mp3": {
+"secs": 3.187,
+"rate": 22050,
+"text": "I've got a password problem, and you're the man to help me with it.",
+"f0": 197.5
+},
+"joexec02.mp3": {
+"secs": 0.94,
+"rate": 22050,
+"text": "MIMPOT!",
+"f0": 363.8
+},
+"joinst01.mp3": {
+"secs": 0.444,
+"rate": 22050,
+"text": "Hello.",
+"f0": 206.5
+},
+"joinst02.mp3": {
+"secs": 0.444,
+"rate": 22050,
+"text": "Hi.",
+"f0": 173.9
+},
+"joinst03.mp3": {
+"secs": 0.444,
+"rate": 22050,
+"text": "Hey!",
+"f0": 207.8
+},
+"joinst04.mp3": {
+"secs": 0.444,
+"rate": 22050,
+"text": "Hiya!",
+"f0": 207.8
+},
+"jorep01.mp3": {
+"secs": 0.81,
+"rate": 22050,
+"text": "received",
+"f0": null
+},
+"jorep02.mp3": {
+"secs": 0.758,
+"rate": 22050,
+"text": "Understood.",
+"f0": null
+},
+"jorep03.mp3": {
+"secs": 0.81,
+"rate": 22050,
+"text": "Affirmative.",
+"f0": null
+},
+"jorep04.mp3": {
+"secs": 0.94,
+"rate": 22050,
+"text": "Confirmed.",
+"f0": null
+},
+"jorpld01.mp3": {
+"secs": 0.758,
+"rate": 22050,
+"text": "Confound.",
+"f0": 106.7
+},
+"jorpld02.mp3": {
+"secs": 0.758,
+"rate": 22050,
+"text": "Understood.",
+"f0": 230.2
+},
+"jorpld03.mp3": {
+"secs": 0.758,
+"rate": 22050,
+"text": "Affirmative.",
+"f0": 210.5
+},
+"jorpld04.mp3": {
+"secs": 0.758,
+"rate": 22050,
+"text": "received.",
+"f0": 213.3
+},
+"josci01.mp3": {
+"secs": 1.646,
+"rate": 22050,
+"text": "SHUT DOWN THE EXPERIMENTS!",
+"f0": 200.0
+},
+"josci02.mp3": {
+"secs": 1.62,
+"rate": 22050,
+"text": "Pull the plug on that, now!",
+"f0": 242.4
+},
+"josci03.mp3": {
+"secs": 1.437,
+"rate": 22050,
+"text": "Switch this thing off!",
+"f0": 262.3
+},
+"labacc1.mp3": {
+"secs": 2.691,
+"rate": 22050,
+"text": "So, you got your elastic!",
+"f0": 222.2
+},
+"labacc2.mp3": {
+"secs": 3.5,
+"rate": 22050,
+"text": "Hey, you're not security alert!",
+"f0": 290.9
+},
+"labacc3.mp3": {
+"secs": 3.135,
+"rate": 22050,
+"text": "No guns allowed here. Put your weapon away.",
+"f0": 262.3
+},
+"labacc4.mp3": {
+"secs": 2.691,
+"rate": 22050,
+"text": "I won't tell you again! Lose 11!",
+"f0": 222.2
+},
+"labacc5.mp3": {
+"secs": 2.429,
+"rate": 22050,
+"text": "Right, I'm calling security.",
+"f0": 285.7
+},
+"labacc6.mp3": {
+"secs": 2.429,
+"rate": 22050,
+"text": "Everyone's been waiting for you.",
+"f0": 146.1
+},
+"labtech1.mp3": {
+"secs": 0.993,
+"rate": 22050,
+"text": "Who are you?",
+"f0": 307.7
+},
+"labtech2.mp3": {
+"secs": 2.247,
+"rate": 22050,
+"text": "Hey! You've got my clothes!",
+"f0": 400.0
+},
+"labtech3.mp3": {
+"secs": 1.959,
+"rate": 22050,
+"text": "HELP! HELP!",
+"f0": 168.4
+},
+"labtech5.mp3": {
+"secs": 2.247,
+"rate": 22050,
+"text": "Oh my god! A gun!",
+"f0": 347.8
+},
+"labtech6.mp3": {
+"secs": 2.064,
+"rate": 22050,
+"text": "There's an intruder in the complex!",
+"f0": 390.2
+},
+"labtech7.mp3": {
+"secs": 2.56,
+"rate": 22050,
+"text": "Give me back my clothes, or else!",
+"f0": 278.3
+},
+"labtech8.mp3": {
+"secs": 2.194,
+"rate": 22050,
+"text": "Right! You've asked for it!",
+"f0": 238.8
+},
+"labtech9.mp3": {
+"secs": 1.567,
+"rate": 22050,
+"text": "Give me my clothes!",
+"f0": 296.3
+},
+"m1_l1_a.mp3": {
+"secs": 4.049,
+"rate": 22050,
+"text": "We're getting a positive reading. The internal comms hub is nearby.",
+"f0": 198.8
+},
+"m1_l1_b.mp3": {
+"secs": 3.004,
+"rate": 22050,
+"text": "You're on the same floor as Cassandra's office.",
+"f0": 168.4
+},
+"m1_l1_c.mp3": {
+"secs": 2.194,
+"rate": 22050,
+"text": "The other Hub's got to be in the security room.",
+"f0": 179.8
+},
+"m1_l1_d.mp3": {
+"secs": 3.239,
+"rate": 22050,
+"text": "The basement elevator must be around there somewhere.",
+"f0": 172.0
+},
+"m1_l2_a.mp3": {
+"secs": 4.754,
+"rate": 22050,
+"text": "That's the highest security sector. Dr. Karl has got to be nearby.",
+"f0": 149.5
+},
+"m1_l2_b.mp3": {
+"secs": 2.56,
+"rate": 22050,
+"text": "Something around here is using a lot of power!",
+"f0": 205.1
+},
+"m1_l2_c.mp3": {
+"secs": 3.944,
+"rate": 22050,
+"text": "We programmed the cleaning bot. It'll give you a way in.",
+"f0": 266.7
+},
+"m1_l2_d.mp3": {
+"secs": 4.31,
+"rate": 22050,
+"text": "Get out, Joe! The levels are too high! Use the camp spy!",
+"f0": 275.9
+},
+"m1_l3_a.mp3": {
+"secs": 3.396,
+"rate": 22050,
+"text": "They've locked down the ground floor! Get to the elevator!",
+"f0": 225.4
+},
+"m1_l3_b.mp3": {
+"secs": 3.709,
+"rate": 22050,
+"text": "That copter needs to be taken out, or the jump ship will get shot down.",
+"f0": 666.7
+},
+"m1_l3_c.mp3": {
+"secs": 2.691,
+"rate": 22050,
+"text": "I can't leave any bodyguards standing.",
+"f0": 225.4
+},
+"m1_l3_d.mp3": {
+"secs": 3.814,
+"rate": 22050,
+"text": "Don't keep the jump ship waiting! Get back to the landing pad!",
+"f0": 202.5
+},
+"m2_l1_a.mp3": {
+"secs": 4.18,
+"rate": 22050,
+"text": "If I get the wind generator back online, I'll get power to the lower basement.",
+"f0": 197.5
+},
+"m2_l1_b.mp3": {
+"secs": 2.56,
+"rate": 22050,
+"text": "I've got to be quick, or they'll kill the negotiator!",
+"f0": 225.4
+},
+"m2_l1_c.mp3": {
+"secs": 1.881,
+"rate": 22050,
+"text": "Here's where they must be holding Daniel.",
+"f0": 240.6
+},
+"m2_l1_d.mp3": {
+"secs": 2.926,
+"rate": 22050,
+"text": "Those hackers have to be stopped before I rescue Daniel.",
+"f0": 205.1
+},
+"m3_l1_a.mp3": {
+"secs": 3.683,
+"rate": 22050,
+"text": "The only place we could secure the equipment was a storm drain.",
+"f0": 182.9
+},
+"m3_l1_b.mp3": {
+"secs": 2.821,
+"rate": 22050,
+"text": "Either of those blocked up doors will do as an escape route.",
+"f0": 210.5
+},
+"m3_l1_c.mp3": {
+"secs": 4.807,
+"rate": 22050,
+"text": "Reprogram that taxi. It's a Mark II and should be compatible.",
+"f0": 228.6
+},
+"m3_l1_d.mp3": {
+"secs": 3.318,
+"rate": 22050,
+"text": "The car park lift is your only point of ingress.",
+"f0": 207.8
+},
+"m3_l2_a.mp3": {
+"secs": 2.691,
+"rate": 22050,
+"text": "There's no way through while those lasers are active.",
+"f0": 231.9
+},
+"m3_l2_b.mp3": {
+"secs": 3.814,
+"rate": 22050,
+"text": "That must be the meeting room up ahead. Time to use the cam spy.",
+"f0": 210.5
+},
+"m3_l2_c.mp3": {
+"secs": 4.676,
+"rate": 22050,
+"text": "The safe's heavily encrypted. The decoder's gonna take a little longer.",
+"f0": 207.8
+},
+"m3_l2_d.mp3": {
+"secs": 3.056,
+"rate": 22050,
+"text": "Time to leave. Let's get to the door I set up earlier.",
+"f0": 235.3
+},
+"m3l2carr.mp3": {
+"secs": 3.187,
+"rate": 22050,
+"text": "Stand back, Joanna. We'll create your escape route.",
+"f0": 252.0
+},
+"m4_l1_a.mp3": {
+"secs": 3.631,
+"rate": 22050,
+"text": "The air intercept radar is controlled from that bunker.",
+"f0": 210.5
+},
+"m4_l1_b.mp3": {
+"secs": 4.049,
+"rate": 22050,
+"text": "There's the antenna, but I can't throw a bug that high!",
+"f0": 266.7
+},
+"m4_l1_c.mp3": {
+"secs": 3.187,
+"rate": 22050,
+"text": "The Hangar Lift is the other side of the huge store.",
+"f0": 210.5
+},
+"m4_l1_d.mp3": {
+"secs": 4.493,
+"rate": 22050,
+"text": "Careful with that trigger finger, Agent Dark. You're closing in on my position.",
+"f0": 170.2
+},
+"m4_l2_a.mp3": {
+"secs": 5.303,
+"rate": 22050,
+"text": "The showers. Now, if I can convince someone to part with their uniform.",
+"f0": 210.5
+},
+"m4_l2_b.mp3": {
+"secs": 3.866,
+"rate": 22050,
+"text": "The temperature's dropping. You must be close to the cryo room.",
+"f0": 164.9
+},
+"m4_l2_c.mp3": {
+"secs": 4.676,
+"rate": 22050,
+"text": "The ASF will be cycled round here, must be near the autopsy lab.",
+"f0": 200.3
+},
+"m4_l2_d.mp3": {
+"secs": 3.239,
+"rate": 22050,
+"text": "There he is, Joe! Honey, I'm gonna be too late!",
+"f0": 246.2
+},
+"m4_l3_a.mp3": {
+"secs": 2.429,
+"rate": 22050,
+"text": "The medpack's gotta be somewhere around here!",
+"f0": 252.0
+},
+"m4_l3_b.mp3": {
+"secs": 4.362,
+"rate": 22050,
+"text": "Time to hook up with Jonathan, before he gets into any more trouble.",
+"f0": 174.9
+},
+"m4_l3_c.mp3": {
+"secs": 4.624,
+"rate": 22050,
+"text": "That smell. Oil. I smelt that in the other hangers.",
+"f0": 216.2
+},
+"m4_l3_d.mp3": {
+"secs": 2.821,
+"rate": 22050,
+"text": "The jetbikes should get me out before they lock the base down.",
+"f0": 231.9
+},
+"m5_l1_a.mp3": {
+"secs": 4.441,
+"rate": 22050,
+"text": "Now's your chance! Grab the stewardess' bag and get her uniform!",
+"f0": 235.3
+},
+"m5_l1_b.mp3": {
+"secs": 2.926,
+"rate": 22050,
+"text": "Use that case to conceal your equipment.",
+"f0": 193.9
+},
+"m5_l1_c.mp3": {
+"secs": 3.004,
+"rate": 22050,
+"text": "The case will get stopped unless you do something.",
+"f0": 666.7
+},
+"m5_l1_d.mp3": {
+"secs": 4.676,
+"rate": 22050,
+"text": "So, that's Air Force One. Huh. Smaller than I thought.",
+"f0": 200.0
+},
+"m5_l2_a.mp3": {
+"secs": 2.56,
+"rate": 22050,
+"text": "Now, let's retrieve the evidence.",
+"f0": null
+},
+"m5_l2_b.mp3": {
+"secs": 2.873,
+"rate": 22050,
+"text": "The president's room is on this level, Joanna.",
+"f0": 163.3
+},
+"m5_l2_c.mp3": {
+"secs": 3.056,
+"rate": 22050,
+"text": "Something's wrong! You have to get to the cockpit!",
+"f0": 533.3
+},
+"m5_l2_d.mp3": {
+"secs": 2.247,
+"rate": 22050,
+"text": "Maybe a mine will detach the UFO.",
+"f0": 258.1
+},
+"m5_l3_a.mp3": {
+"secs": 1.306,
+"rate": 22050,
+"text": "There's the escape pod!",
+"f0": 340.4
+},
+"m5_l3_b.mp3": {
+"secs": 1.646,
+"rate": 22050,
+"text": "Maybe there's a beacon in there.",
+"f0": 222.2
+},
+"m5_l3_c.mp3": {
+"secs": 1.959,
+"rate": 22050,
+"text": "The Charming, it's coming from that ship!",
+"f0": 238.8
+},
+"m5_l3_d.mp3": {
+"secs": 3.004,
+"rate": 22050,
+"text": "Elvis! He'll be able to protect the president!",
+"f0": 262.3
+},
+"m6_l1_a.mp3": {
+"secs": 3.944,
+"rate": 22050,
+"text": "Cripple the engines and the ship will drift. Perfect!",
+"f0": 262.3
+},
+"m6_l1_b.mp3": {
+"secs": 2.116,
+"rate": 22050,
+"text": "This must be where the sub is controlled from.",
+"f0": 246.2
+},
+"m6_l1_c.mp3": {
+"secs": 6.322,
+"rate": 22050,
+"text": "Without the autopilot and the GPS, the ship will wander off station.",
+"f0": 200.0
+},
+"m6_l1_d.mp3": {
+"secs": 3.239,
+"rate": 22050,
+"text": "They'll be unable to conduct operations without any power.",
+"f0": 173.9
+},
+"m6_l2_a.mp3": {
+"secs": 2.429,
+"rate": 22050,
+"text": "This will help us to get around the ship quicker!",
+"f0": 275.9
+},
+"m6_l2_b.mp3": {
+"secs": 3.944,
+"rate": 22050,
+"text": "This antibody rescue will protect us from the automatic defenses!",
+"f0": 225.4
+},
+"m6_l2_c.mp3": {
+"secs": 4.493,
+"rate": 22050,
+"text": "There's Dr. Carol. Let's see if we can reverse what was done to him.",
+"f0": 320.0
+},
+"m6_l2_d.mp3": {
+"secs": 1.75,
+"rate": 22050,
+"text": "We have to get out of here!",
+"f0": 421.1
+},
+"m7_l1_a.mp3": {
+"secs": 2.56,
+"rate": 22050,
+"text": "The auto-defenses will really help me out!",
+"f0": 196.3
+},
+"m7_l1_b.mp3": {
+"secs": 2.743,
+"rate": 22050,
+"text": "So this is what Foster was working on.",
+"f0": 155.3
+},
+"m7_l1_c.mp3": {
+"secs": 3.37,
+"rate": 22050,
+"text": "I'll have to go carefully. The hostages are counting on me.",
+"f0": 190.5
+},
+"m7_l1_d.mp3": {
+"secs": 2.691,
+"rate": 22050,
+"text": "Well, at least I won't know if I'm doing anything wrong.",
+"f0": 196.3
+},
+"m8_l1_a.mp3": {
+"secs": 4.676,
+"rate": 22050,
+"text": "I've got to get those shields down to let Elvis in. I need all the help I can get!",
+"f0": 242.4
+},
+"m8_l1_b.mp3": {
+"secs": 2.064,
+"rate": 22050,
+"text": "Now only the hangar bay doors are in the way.",
+"f0": 231.9
+},
+"m8_l1_c.mp3": {
+"secs": 2.612,
+"rate": 22050,
+"text": "This machine contains the skedar star maps.",
+"f0": 195.1
+},
+"m8_l1_d.mp3": {
+"secs": 3.239,
+"rate": 22050,
+"text": "If we control the bridge, then the ship is ours.",
+"f0": 258.1
+},
+"m9_l1_a.mp3": {
+"secs": 2.377,
+"rate": 22050,
+"text": "This seems to be one of the special pillars.",
+"f0": 161.6
+},
+"m9_l1_b.mp3": {
+"secs": 5.068,
+"rate": 22050,
+"text": "The power's more constant in this area. The inner sanctum can't be far away.",
+"f0": 219.2
+},
+"m9_l1_c.mp3": {
+"secs": 3.814,
+"rate": 22050,
+"text": "Oh no! The skid are all mean suspenders animation!",
+"f0": 340.4
+},
+"m9_l1_d.mp3": {
+"secs": 4.18,
+"rate": 22050,
+"text": "Okay, this is it. Cut off the head and the body will perish.",
+"f0": 238.9
+},
+"offwrk01.mp3": {
+"secs": 1.959,
+"rate": 22050,
+"text": "Come back later! I'm busy!",
+"f0": 202.5
+},
+"offwrk02.mp3": {
+"secs": 1.881,
+"rate": 22050,
+"text": "GO AWAY!",
+"f0": 271.2
+},
+"offwrk03.mp3": {
+"secs": 3.239,
+"rate": 22050,
+"text": "Look! I can't help you!",
+"f0": 176.8
+},
+"offwrk04.mp3": {
+"secs": 2.821,
+"rate": 22050,
+"text": "Stop them! They're breaking into the safe!",
+"f0": 271.2
+},
+"p10_01_ca.mp3": {
+"secs": 5.93,
+"rate": 22050,
+"text": "Okay Joanna, take a look at this. Our operator inside Area 51 was able to get this art to us.",
+"f0": 149.5
+},
+"p10_02_ca.mp3": {
+"secs": 3.944,
+"rate": 22050,
+"text": "This is your entry point. A deserted helipad on the edge of the base.",
+"f0": 137.9
+},
+"p10_03_ca.mp3": {
+"secs": 5.695,
+"rate": 22050,
+"text": "The lift down to the hangars and the rendezvous point is beyond that wall. Watch out for these guards.",
+"f0": 132.2
+},
+"p10_04_ca.mp3": {
+"secs": 8.62,
+"rate": 22050,
+"text": "Here is the communications antenna. Attach a comms rider bug so we can talk to you when you're inside the base. Again, watch out for hostiles.",
+"f0": 135.6
+},
+"p10_05_jo.mp3": {
+"secs": 2.194,
+"rate": 22050,
+"text": "Oh my god!",
+"f0": 238.8
+},
+"p10_06_ca.mp3": {
+"secs": 10.318,
+"rate": 22050,
+"text": "Here is our friend. He appears to be physically in hurt, though he hasn't regained consciousness yet. By the look of it, the surgeons are almost done with their preliminary tests and will begin dissection soon.",
+"f0": 140.4
+},
+"p10_07_jo.mp3": {
+"secs": 1.071,
+"rate": 22050,
+"text": "But who was...",
+"f0": 355.6
+},
+"p10_08_ca.mp3": {
+"secs": 4.049,
+"rate": 22050,
+"text": "Any questions? No. Good. Away you go to the hangar.",
+"f0": 135.6
+},
+"p10_09_jo.mp3": {
+"secs": 7.811,
+"rate": 22050,
+"text": "Agent Dark, Mission Log, 1028 hours. Against my better judgment, I'm about to enter Area 51.",
+"f0": 172.0
+},
+"p11_01_jn.mp3": {
+"secs": 1.646,
+"rate": 22050,
+"text": "Agent Dark, over here!",
+"f0": 222.2
+},
+"p11_02_jo.mp3": {
+"secs": 2.377,
+"rate": 22050,
+"text": "There you are! I was beginning to wonder if...",
+"f0": 207.8
+},
+"p11_03_jn.mp3": {
+"secs": 0.758,
+"rate": 22050,
+"text": "If what?",
+"f0": 141.6
+},
+"p11_04_jo.mp3": {
+"secs": 6.87,
+"rate": 22050,
+"text": "If you'd been discovered yet, and frankly if this is how you work, I'm amazed that you lasted longer than five minutes.",
+"f0": 216.2
+},
+"p11_05_jn.mp3": {
+"secs": 2.377,
+"rate": 22050,
+"text": "I was tidying up one of your loose ends.",
+"f0": 153.1
+},
+"p11_06_jo.mp3": {
+"secs": 1.489,
+"rate": 22050,
+"text": "My loose ends.",
+"f0": 202.5
+},
+"p11_07_jn.mp3": {
+"secs": 5.433,
+"rate": 22050,
+"text": "I'm sorry, I didn't realize you wanted him to shoot you. I can call in some more gods if you like.",
+"f0": 133.9
+},
+"p11_08_jo.mp3": {
+"secs": 5.251,
+"rate": 22050,
+"text": "Okay, okay, forget about it. I'm going to let the Institute know we've made contact.",
+"f0": 181.8
+},
+"p12_01_jn.mp3": {
+"secs": 10.815,
+"rate": 22050,
+"text": "The problem you have is that there is no way to sneak into the research section. The only way unavailable to you is a weak section of wall I've marked in the room beyond the stores. It can be destroyed with explosives.",
+"f0": 133.3
+},
+"p12_02_jo.mp3": {
+"secs": 3.631,
+"rate": 22050,
+"text": "Doesn't sound like a problem to me. Where are these explosives?",
+"f0": 188.2
+},
+"p12_03_jn.mp3": {
+"secs": 1.071,
+"rate": 22050,
+"text": "In that crate.",
+"f0": 103.9
+},
+"p12_04_jo.mp3": {
+"secs": 2.508,
+"rate": 22050,
+"text": "Cute, very cute.",
+"f0": 179.8
+},
+"p12_05_jn.mp3": {
+"secs": 6.74,
+"rate": 22050,
+"text": "By the way, the stores are crawling with guards. It may go against your nature, but try sneaking through rather than blasting everything.",
+"f0": 134.5
+},
+"p12_06_jo.mp3": {
+"secs": 3.318,
+"rate": 22050,
+"text": "Certainly. Any other pearls of wisdom?",
+"f0": 198.8
+},
+"p12_07_jn.mp3": {
+"secs": 0.81,
+"rate": 22050,
+"text": "That crate!",
+"f0": 188.2
+},
+"p12_08_jo.mp3": {
+"secs": 0.81,
+"rate": 22050,
+"text": "Yes.",
+"f0": 166.7
+},
+"p12_09_jn.mp3": {
+"secs": 2.064,
+"rate": 22050,
+"text": "It really doesn't like being shot.",
+"f0": 149.5
+},
+"p12_10_jo.mp3": {
+"secs": 4.624,
+"rate": 22050,
+"text": "Great, now if I can just fight the urge to report him to base security.",
+"f0": 161.6
+},
+"p13_01_jo.mp3": {
+"secs": 2.247,
+"rate": 22050,
+"text": "Put your hands up and step away from the alien.",
+"f0": 238.8
+},
+"p13_02_su.mp3": {
+"secs": 7.497,
+"rate": 22050,
+"text": "What the hell do you think you're doing? This is supposed to be a sealed room! Don't you know anything about autopsy procedures?",
+"f0": 231.9
+},
+"p13_03_jo.mp3": {
+"secs": 3.709,
+"rate": 22050,
+"text": "Don't make me tell you again, Doctor! And turn that laser off!",
+"f0": 210.5
+},
+"p13_04_su.mp3": {
+"secs": 2.612,
+"rate": 22050,
+"text": "Director Easton will hear about this young lady.",
+"f0": 195.1
+},
+"p13_06_su.mp3": {
+"secs": 6.113,
+"rate": 22050,
+"text": "You can't take that! It's government property! This is intolerable! It's unprofessional!",
+"f0": 246.2
+},
+"p14_03_su.mp3": {
+"secs": 7.131,
+"rate": 22050,
+"text": "Let's see how that overconfident thief deals with our gas defense system. She'll think twice before messing with me again.",
+"f0": 115.9
+},
+"p14_04_jo.mp3": {
+"secs": 3.318,
+"rate": 22050,
+"text": "What's that noise? Can't be. Yes!",
+"f0": 258.1
+},
+"p14_05_su.mp3": {
+"secs": 2.612,
+"rate": 22050,
+"text": "No! That wasn't meant to happen!",
+"f0": 246.2
+},
+"p14_07_jo.mp3": {
+"secs": 2.612,
+"rate": 22050,
+"text": "You idiot! We'd better get out of here!",
+"f0": 216.2
+},
+"p14_09_jo.mp3": {
+"secs": 2.508,
+"rate": 22050,
+"text": "I don't care much for procedures.",
+"f0": 192.9
+},
+"p15_01_el.mp3": {
+"secs": 4.127,
+"rate": 22050,
+"text": "AHHH! AHH! AHH! AHH!",
+"f0": 421.1
+},
+"p15_02_el.mp3": {
+"secs": 10.632,
+"rate": 22050,
+"text": "I'm alive! I thought I'd be chopped up like the others by now. You're from the Institute, aren't you? I recognize you from before. You helped me. Thank you.",
+"f0": 250.0
+},
+"p15_03_jo.mp3": {
+"secs": 1.933,
+"rate": 22050,
+"text": "You... you speak our language.",
+"f0": 266.7
+},
+"p15_04_jn.mp3": {
+"secs": 1.489,
+"rate": 22050,
+"text": "Watch her, she's sharp.",
+"f0": 124.5
+},
+"p15_05_el.mp3": {
+"secs": 1.959,
+"rate": 22050,
+"text": "Aaargh!",
+"f0": 304.8
+},
+"p15_06_jo.mp3": {
+"secs": 0.679,
+"rate": 22050,
+"text": "What's wrong?",
+"f0": 307.7
+},
+"p15_07_el.mp3": {
+"secs": 3.553,
+"rate": 22050,
+"text": "I have a headache, and with a head this big, that's no joke!",
+"f0": 186.0
+},
+"p15_08_jo.mp3": {
+"secs": 3.683,
+"rate": 22050,
+"text": "Can you walk? We must leave before they get organized on Hunter's Dam.",
+"f0": 231.9
+},
+"p15_09_el.mp3": {
+"secs": 2.429,
+"rate": 22050,
+"text": "I think so. What's your name?",
+"f0": 381.0
+},
+"p15_10_jo.mp3": {
+"secs": 3.5,
+"rate": 22050,
+"text": "I'm Agent Dark, or Joanna if you'd prefer.",
+"f0": 222.2
+},
+"p15_11_el.mp3": {
+"secs": 4.676,
+"rate": 22050,
+"text": "Well, Joanna, I'm Protector One, but you can call me Elvis.",
+"f0": 250.1
+},
+"p16_01_jo.mp3": {
+"secs": 7.549,
+"rate": 22050,
+"text": "It can darken position, I can see the main entrance to the base, and I can just make out the cable car arrival point.",
+"f0": 200.0
+},
+"p16_02_ca.mp3": {
+"secs": 11.99,
+"rate": 22050,
+"text": "Excellent, Joanna. That cable car is your way in. Our observer at the Lortominus has spotted a member of the flight crew boarding a minute ago. She is being escorted by air-based troops. I don't have to remind you that...",
+"f0": 126.0
+},
+"p16_03_jo.mp3": {
+"secs": 8.803,
+"rate": 22050,
+"text": "that they're probably innocent of any involvement in Trent's little scheme. And I can't shoot at them, even if they shoot at me. What about the NSA agents?",
+"f0": 205.1
+},
+"p16_04_ca.mp3": {
+"secs": 13.113,
+"rate": 22050,
+"text": "I don't know how far the conspiracy has spread through the NSA, but I'm willing to bet that the men Trent has around him here are loyal to him and his plan. You have to get the evidence of Trent's betrayal onto Air Force One and show it to the President.",
+"f0": 131.1
+},
+"p16_05_jo.mp3": {
+"secs": 8.438,
+"rate": 22050,
+"text": "Yes, and protect him from his abductors. Do you have any idea what transplant might be yet? What about those blonde guys?",
+"f0": 202.5
+},
+"p16_06_ca.mp3": {
+"secs": 5.616,
+"rate": 22050,
+"text": "Only vague suspicions, and I won't distract you with those. Good luck. Callington out.",
+"f0": 116.8
+},
+"p17_01_tr.mp3": {
+"secs": 3.187,
+"rate": 22050,
+"text": "Have you thought any more about that proposal I gave you, sir?",
+"f0": 117.6
+},
+"p17_02_pr.mp3": {
+"secs": 8.438,
+"rate": 22050,
+"text": "My answer remains the same. I'm sorry Trent, but no. I won't loan the pelagic to the dataDyne. Now please, can we move on to other matters?",
+"f0": 101.3
+},
+"p17_03_tr.mp3": {
+"secs": 6.008,
+"rate": 22050,
+"text": "But this is a golden opportunity to show that America has faith in its industries and will back them.",
+"f0": 160.0
+},
+"p17_04_pr.mp3": {
+"secs": 15.491,
+"rate": 22050,
+"text": "Dammit man, I say no and I mean no. I'm not going to change my mind on this. I need my advices to be unbiased and recently you've not been giving me the impartiality I require. Let it go and we'll say no more. This is your last chance.",
+"f0": 111.9
+},
+"p17_05_tr.mp3": {
+"secs": 2.299,
+"rate": 22050,
+"text": "As you wish, sir.",
+"f0": 129.0
+},
+"p17_06_tr.mp3": {
+"secs": 5.564,
+"rate": 22050,
+"text": "My last chance, you fool, that was yours.",
+"f0": 142.0
+},
+"p18_01_jo.mp3": {
+"secs": 5.878,
+"rate": 22050,
+"text": "Elvis! Elvis! I can't detach that tube from the fuselage! Can you take it out?",
+"f0": 381.0
+},
+"p18_02_el.mp3": {
+"secs": 2.926,
+"rate": 22050,
+"text": "Piece of cake Joanna, what's this?",
+"f0": 179.8
+},
+"p18_03_el.mp3": {
+"secs": 0.862,
+"rate": 22050,
+"text": "Uh-oh!",
+"f0": 266.7
+},
+"p18_04_jo.mp3": {
+"secs": 3.5,
+"rate": 22050,
+"text": "Watch what? Will you stop playing around and shoot?",
+"f0": 372.1
+},
+"p18_05_el.mp3": {
+"secs": 4.441,
+"rate": 22050,
+"text": "Out of options! Jo-Ann, raise yourself for impact!",
+"f0": 381.0
+},
+"p19_01_ca.mp3": {
+"secs": 2.194,
+"rate": 22050,
+"text": "Agent Doc, please report.",
+"f0": 223.8
+},
+"p19_02_ca.mp3": {
+"secs": 1.646,
+"rate": 22050,
+"text": "Perfect Doc, come in!",
+"f0": 244.6
+},
+"p19_03_jo.mp3": {
+"secs": 2.691,
+"rate": 22050,
+"text": "A agent dark, reporting in.",
+"f0": 262.3
+},
+"p19_04_ca.mp3": {
+"secs": 2.377,
+"rate": 22050,
+"text": "Agent Dark, please reply!",
+"f0": 268.9
+},
+"p19_05_jo.mp3": {
+"secs": 5.747,
+"rate": 22050,
+"text": "Something's jamming my transmissions. It's coming from that other craft!",
+"f0": 237.1
+},
+"p19_06_jo.mp3": {
+"secs": 6.243,
+"rate": 22050,
+"text": "I'd better find the jamming device and check the Elvis is okay. Not forgetting the president, of course.",
+"f0": 219.2
+},
+"p19_07_jo.mp3": {
+"secs": 2.926,
+"rate": 22050,
+"text": "Oh",
+"f0": 254.0
+},
+"p19_08_jo.mp3": {
+"secs": 2.064,
+"rate": 22050,
+"text": "Oh",
+"f0": 150.9
+},
+"p1_01_jo.mp3": {
+"secs": 1.646,
+"rate": 22050,
+"text": "Why the big hurry?",
+"f0": 271.2
+},
+"p1_02_ca.mp3": {
+"secs": 8.647,
+"rate": 22050,
+"text": "If Dr. Cowell is not extracted tonight, dataDyne will put him through mind-conditioning. And we'll lose our best chance of finding out what dataDyne are up to.",
+"f0": 173.9
+},
+"p1_03_jo.mp3": {
+"secs": 2.064,
+"rate": 22050,
+"text": "Are they all expendable?",
+"f0": 258.1
+},
+"p1_04_ca.mp3": {
+"secs": 10.945,
+"rate": 22050,
+"text": "Don't joke. You have to be careful, Joanna. Code keys will only operate while the owner is alive. If you kill them, the key is useless. Our gods are a different matter, of course.",
+"f0": 152.4
+},
+"p1_05_jo.mp3": {
+"secs": 1.933,
+"rate": 22050,
+"text": "What's the target location?",
+"f0": 219.2
+},
+"p1_06_ca.mp3": {
+"secs": 6.687,
+"rate": 22050,
+"text": "Work your way down the building to the ground level. Dr. Cowell will be in a research lab somewhere in the underground facility.",
+"f0": 160.0
+},
+"p1_07_jo.mp3": {
+"secs": 1.933,
+"rate": 22050,
+"text": "How will I recognize him?",
+"f0": 195.1
+},
+"p1_08_ca.mp3": {
+"secs": 7.497,
+"rate": 22050,
+"text": "We don't have an image record, and we can't find any official files. All we have is the name. Good luck, Dr. McDock.",
+"f0": 160.0
+},
+"p20_01_jo.mp3": {
+"secs": 1.62,
+"rate": 22050,
+"text": "How are you feeling, Mr. President?",
+"f0": 313.7
+},
+"p20_02_pr.mp3": {
+"secs": 12.251,
+"rate": 22050,
+"text": "Better now, young lady. Today I think will take a while for me to get over. I can't believe Easton would do such a thing. I knew he was ambitious, yes, but this...",
+"f0": 91.4
+},
+"p20_03_jo.mp3": {
+"secs": 5.695,
+"rate": 22050,
+"text": "Just one thing sir, what is the pelagic 2 that Trent wanted so badly?",
+"f0": 186.0
+},
+"p20_04_pr.mp3": {
+"secs": 12.957,
+"rate": 22050,
+"text": "It's a US government deep sea research vessel, one of a kind, the only ship that can conduct a full-scale diving operation at extreme depth. Trent wanted me to loan it to the dataDyne Corporation, but I refused.",
+"f0": 88.4
+},
+"p20_05_jo.mp3": {
+"secs": 4.362,
+"rate": 22050,
+"text": "Trent has a lot to answer for, but I don't think we'll find him now.",
+"f0": 182.9
+},
+"p20_06_bl.mp3": {
+"secs": 6.322,
+"rate": 22050,
+"text": "You have failed, Easton. You are a flawed device, and we need you no longer.",
+"f0": 98.8
+},
+"p20_07_tr.mp3": {
+"secs": 2.377,
+"rate": 22050,
+"text": "Just try it, you Scandinavian freak!",
+"f0": 139.1
+},
+"p20_08_tr.mp3": {
+"secs": 2.116,
+"rate": 22050,
+"text": "NOOOOO!",
+"f0": 210.5
+},
+"p21_01_el.mp3": {
+"secs": 5.799,
+"rate": 22050,
+"text": "Right! The diving operation has been disrupted on the surface! Time for a swim!",
+"f0": 228.6
+},
+"p21_02_jo.mp3": {
+"secs": 3.709,
+"rate": 22050,
+"text": "I hope the government don't want to use this ship anytime soon.",
+"f0": 183.9
+},
+"p21_03_el.mp3": {
+"secs": 2.821,
+"rate": 22050,
+"text": "Do you think we were a little heavy-handed?",
+"f0": 198.8
+},
+"p21_04_jo.mp3": {
+"secs": 1.123,
+"rate": 22050,
+"text": "Nah.",
+"f0": 163.3
+},
+"p22_01_el.mp3": {
+"secs": 3.187,
+"rate": 22050,
+"text": "This doesn't seem normal, no one's around!",
+"f0": 231.9
+},
+"p22_02_jo.mp3": {
+"secs": 3.997,
+"rate": 22050,
+"text": "No signs of conflict, no spent ammo cases or bullet holes.",
+"f0": 216.2
+},
+"p22_03_el.mp3": {
+"secs": 4.31,
+"rate": 22050,
+"text": "But there ought to be a real guard at least, it makes no sense!",
+"f0": 213.3
+},
+"p22_04_jo.mp3": {
+"secs": 3.396,
+"rate": 22050,
+"text": "There has to be someone further inside. Cover me.",
+"f0": 228.6
+},
+"p23_01_jo.mp3": {
+"secs": 4.676,
+"rate": 22050,
+"text": "Here goes. I just hope dataDyne haven't done anything to prevent this.",
+"f0": 200.0
+},
+"p23_02_dr.mp3": {
+"secs": 1.62,
+"rate": 22050,
+"text": "Virus detected.",
+"f0": 153.8
+},
+"p23_03_jo.mp3": {
+"secs": 1.881,
+"rate": 22050,
+"text": "Me and my big mouth.",
+"f0": 244.3
+},
+"p23_04_dr.mp3": {
+"secs": 12.957,
+"rate": 22050,
+"text": "Commencing council measures. Commence-",
+"f0": 421.1
+},
+"p23_05_jo.mp3": {
+"secs": 4.807,
+"rate": 22050,
+"text": "Dr. Carroll, are you in control again? Can you stop the program?",
+"f0": 271.2
+},
+"p23_06_dr.mp3": {
+"secs": 8.568,
+"rate": 22050,
+"text": "Yes, I'm back again, my dear. But the programmers run far too long for me to prevent it from completing. There is only one way out now!",
+"f0": 280.7
+},
+"p23_07_jo.mp3": {
+"secs": 0.862,
+"rate": 22050,
+"text": "What do you mean?",
+"f0": 219.2
+},
+"p23_08_dr.mp3": {
+"secs": 29.179,
+"rate": 22050,
+"text": "When the program has run, I will have control of a vastly powerful weapon. It cannot be allowed to exist, so I must destroy the Seaton, and unfortunately, myself along with it. I am sorry, Joanna. There is no other way, and no time to discuss this. Go now! Avoid the schedule and you will have time to escape. It has been an honor to work with you. Goodbye, Joanna Dark!",
+"f0": 246.2
+},
+"p24_01_ca.mp3": {
+"secs": 6.322,
+"rate": 22050,
+"text": "Already, John? We can't get the main delegation waiting. Or the President, of course.",
+"f0": 124.0
+},
+"p24_02_jo.mp3": {
+"secs": 5.433,
+"rate": 22050,
+"text": "Am I ready? What do you mean? I was ready half an hour ago, it was you holding us up.",
+"f0": 200.0
+},
+"p24_03_ca.mp3": {
+"secs": 5.381,
+"rate": 22050,
+"text": "But you know how it is Joanna, I had to make sure my hair was just right, and then there was the suit.",
+"f0": 121.2
+},
+"p24_04_jo.mp3": {
+"secs": 3.997,
+"rate": 22050,
+"text": "They should keep you away from mirrors. Nervous?",
+"f0": 202.5
+},
+"p24_05_ca.mp3": {
+"secs": 14.315,
+"rate": 22050,
+"text": "Very. I've waited for this moment for so many years. Contact. Friendly contact between humans and man's is what the Institute was founded for. And in a few minutes we'll be at the White House, and it will finally happen.",
+"f0": 121.2
+},
+"p24_06_ca.mp3": {
+"secs": 1.176,
+"rate": 22050,
+"text": "Where did that come from?",
+"f0": 129.2
+},
+"p24_07_jo.mp3": {
+"secs": 1.306,
+"rate": 22050,
+"text": "It was up on ground level.",
+"f0": 242.4
+},
+"p24_08_jo.mp3": {
+"secs": 4.127,
+"rate": 22050,
+"text": "Looks like someone doesn't know when to quit. We've got to get everyone out.",
+"f0": 227.0
+},
+"p25_01_jo.mp3": {
+"secs": 4.31,
+"rate": 22050,
+"text": "Get clear! I'll hold them off! You can come back and get me later!",
+"f0": 410.3
+},
+"p25_02_jo.mp3": {
+"secs": 1.959,
+"rate": 22050,
+"text": "At least I hope you come.",
+"f0": 197.5
+},
+"p25_03_jo.mp3": {
+"secs": 0.862,
+"rate": 22050,
+"text": "Ahh!",
+"f0": 640.0
+},
+"p26_01_jo.mp3": {
+"secs": 3.187,
+"rate": 22050,
+"text": "Oh, I'd better not be where I think I am.",
+"f0": 231.9
+},
+"p26_02_dv.mp3": {
+"secs": 4.362,
+"rate": 22050,
+"text": "And it's worse than that, my dear. Just look who you've got for company.",
+"f0": 188.2
+},
+"p26_03_jo.mp3": {
+"secs": 6.322,
+"rate": 22050,
+"text": "You? I thought you'd managed to escape. We found no trace of you at all.",
+"f0": 213.3
+},
+"p26_04_dv.mp3": {
+"secs": 6.557,
+"rate": 22050,
+"text": "You couldn't find me, but there was no hiding from the skedar, as you and Mr. Carrington just discovered.",
+"f0": 186.0
+},
+"p26_05_dv.mp3": {
+"secs": 8.124,
+"rate": 22050,
+"text": "This is it. Wait there. I'll make a distraction. It will give you a chance to get out. Use it or we'll both die.",
+"f0": 219.2
+},
+"p26_06_jo.mp3": {
+"secs": 1.802,
+"rate": 22050,
+"text": "Why are you doing this, Cassandra?",
+"f0": 216.4
+},
+"p26_07_dv.mp3": {
+"secs": 5.146,
+"rate": 22050,
+"text": "The skidar used me Joanna, you were my best chance for revenge.",
+"f0": 170.2
+},
+"p26_08_dv.mp3": {
+"secs": 2.299,
+"rate": 22050,
+"text": "AHHHHHHHH!",
+"f0": 761.9
+},
+"p27_01_jo.mp3": {
+"secs": 6.191,
+"rate": 22050,
+"text": "Wow, that's the first time I've seen another planet from space. It's beautiful.",
+"f0": 197.5
+},
+"p27_02_el.mp3": {
+"secs": 0.81,
+"rate": 22050,
+"text": "HUH?!",
+"f0": 524.7
+},
+"p27_03_el.mp3": {
+"secs": 2.194,
+"rate": 22050,
+"text": "I don't... I don't believe it!",
+"f0": 355.6
+},
+"p27_04_jo.mp3": {
+"secs": 2.377,
+"rate": 22050,
+"text": "Elvis? What is it?",
+"f0": 323.3
+},
+"p27_05_jo.mp3": {
+"secs": 1.567,
+"rate": 22050,
+"text": "Where are you going?",
+"f0": 271.2
+},
+"p27_06_el.mp3": {
+"secs": 2.821,
+"rate": 22050,
+"text": "We have to get down to the surface, follow me!",
+"f0": 372.1
+},
+"p28_01_el.mp3": {
+"secs": 10.057,
+"rate": 22050,
+"text": "This is the Skinner Phonetics' most holy place! They believe this planet is sacred ground! The battle shrine is located at the most holy part of this holy planet!",
+"f0": 210.5
+},
+"p28_02_jo.mp3": {
+"secs": 5.799,
+"rate": 22050,
+"text": "So let me get this straight, it's holy, but there's more to it than that, isn't there?",
+"f0": 250.0
+},
+"p28_03_el.mp3": {
+"secs": 19.879,
+"rate": 22050,
+"text": "Yes, in all of the time that we Maians fought the Skedar, we never found this place. We knew that until it was destroyed, the war would never be over. We fought the Skedar to a standstill. We earned a ceasefire, but we always had to be on our guard. A destruction of this place would mean a chance at true peace.",
+"f0": 242.4
+},
+"p28_04_jo.mp3": {
+"secs": 8.803,
+"rate": 22050,
+"text": "Then we have to be certain that no fanatics survive. I'll go in and take out the leader. You'll have to summon the Maian fleet to level the shrine.",
+"f0": 201.3
+},
+"p28_05_el.mp3": {
+"secs": 3.866,
+"rate": 22050,
+"text": "If you're caught on the ground when the freak gets you, you won't stand a chance.",
+"f0": 228.6
+},
+"p28_06_jo.mp3": {
+"secs": 2.429,
+"rate": 22050,
+"text": "That's a mistake I don't intend to make.",
+"f0": 161.6
+},
+"p29_01_el.mp3": {
+"secs": 1.959,
+"rate": 22050,
+"text": "Joanna! Joanna!",
+"f0": 484.8
+},
+"p29_02_jo.mp3": {
+"secs": 3.5,
+"rate": 22050,
+"text": "Elvis, Elvis over here!",
+"f0": 444.4
+},
+"p29_03_el.mp3": {
+"secs": 3.239,
+"rate": 22050,
+"text": "No problem! Grab my arms! We'll get you out in no time!",
+"f0": 296.3
+},
+"p29_04_jo.mp3": {
+"secs": 2.691,
+"rate": 22050,
+"text": "No! Quick! Give me your gun!",
+"f0": 296.3
+},
+"p29_05_jo.mp3": {
+"secs": 2.429,
+"rate": 22050,
+"text": "Will. You. Just!",
+"f0": 484.8
+},
+"p29_06_el.mp3": {
+"secs": 5.12,
+"rate": 22050,
+"text": "I managed to get the feet to stop the bombardment when I looked for you! They'll start as soon as we're clear!",
+"f0": 262.3
+},
+"p29_07_jo.mp3": {
+"secs": 3.135,
+"rate": 22050,
+"text": "I'd have got out in time if that one hadn't grabbed my foot.",
+"f0": 254.0
+},
+"p29_08_el.mp3": {
+"secs": 2.064,
+"rate": 22050,
+"text": "Of course, Joanne! Of course!",
+"f0": 457.1
+},
+"p29_09_jo.mp3": {
+"secs": 1.489,
+"rate": 22050,
+"text": "No, I wouldn't!",
+"f0": 340.4
+},
+"p29_10_el.mp3": {
+"secs": 1.071,
+"rate": 22050,
+"text": "I believe you!",
+"f0": 333.3
+},
+"p29_11_jo.mp3": {
+"secs": 0.862,
+"rate": 22050,
+"text": "Yes!",
+"f0": null
+},
+"p29_12_el.mp3": {
+"secs": 1.881,
+"rate": 22050,
+"text": "Where are you? Are you hurt?",
+"f0": 444.4
+},
+"p29_13_jo.mp3": {
+"secs": 1.123,
+"rate": 22050,
+"text": "Oh no!",
+"f0": 450.8
+},
+"p29_14_jo.mp3": {
+"secs": 1.384,
+"rate": 22050,
+"text": "Let go!",
+"f0": 210.5
+},
+"p29_15_jo.mp3": {
+"secs": 1.306,
+"rate": 22050,
+"text": "Noooooo!",
+"f0": 533.3
+},
+"p2_01_jo.mp3": {
+"secs": 0.862,
+"rate": 22050,
+"text": "Dr. Carroll?",
+"f0": 264.5
+},
+"p2_02_jo.mp3": {
+"secs": 1.254,
+"rate": 22050,
+"text": "Dr. Carroll, are you here?",
+"f0": 290.9
+},
+"p2_03_dr.mp3": {
+"secs": 2.612,
+"rate": 22050,
+"text": "Well? Is it safe to come out?",
+"f0": 299.1
+},
+"p2_04_jo.mp3": {
+"secs": 1.254,
+"rate": 22050,
+"text": "Yes, all clear.",
+"f0": 225.4
+},
+"p2_05_jo.mp3": {
+"secs": 2.508,
+"rate": 22050,
+"text": "Wha- What? You're-",
+"f0": 363.6
+},
+"p2_06_dr.mp3": {
+"secs": 6.896,
+"rate": 22050,
+"text": "Very professionally done, my dear. There's no time to waste. We must leave immediately.",
+"f0": 169.3
+},
+"p2_07_dr.mp3": {
+"secs": 4.937,
+"rate": 22050,
+"text": "Come on! I have vital information and you must protect me!",
+"f0": 280.7
+},
+"p3_01_gd.mp3": {
+"secs": 1.802,
+"rate": 22050,
+"text": "Sound the alarm, she's here!",
+"f0": 313.7
+},
+"p3_02_jo.mp3": {
+"secs": 1.071,
+"rate": 22050,
+"text": "LIGHTS OUT!",
+"f0": 275.9
+},
+"p3_03_jo.mp3": {
+"secs": 0.94,
+"rate": 22050,
+"text": "Fuck the-",
+"f0": 400.0
+},
+"p4_01_dv.mp3": {
+"secs": 1.567,
+"rate": 22050,
+"text": "GOING SOMEWHERE",
+"f0": 183.9
+},
+"p4_02_jo.mp3": {
+"secs": 2.299,
+"rate": 22050,
+"text": "Something I can do for you, old woman.",
+"f0": 173.0
+},
+"p4_03_dv.mp3": {
+"secs": 3.631,
+"rate": 22050,
+"text": "Return our sapient immediately! You don't know what you're doing!",
+"f0": 285.7
+},
+"p4_04_jo.mp3": {
+"secs": 2.691,
+"rate": 22050,
+"text": "Yes, I do. I'm leaving.",
+"f0": 168.4
+},
+"p4_05_dv.mp3": {
+"secs": 4.493,
+"rate": 22050,
+"text": "One more chance, give it back, and you could come and work for me.",
+"f0": 235.3
+},
+"p4_06_jo.mp3": {
+"secs": 1.437,
+"rate": 22050,
+"text": "Sorry, gotta shoot!",
+"f0": 271.2
+},
+"p4_07_bl.mp3": {
+"secs": 3.814,
+"rate": 22050,
+"text": "You must get the sapient back. We cannot proceed without it.",
+"f0": 89.9
+},
+"p4_08_dv.mp3": {
+"secs": 1.071,
+"rate": 22050,
+"text": "I know that.",
+"f0": 191.6
+},
+"p4_09_dv.mp3": {
+"secs": 4.31,
+"rate": 22050,
+"text": "I also know who to talk to, Mr. Carrington.",
+"f0": 158.4
+},
+"p5_01_jo.mp3": {
+"secs": 13.688,
+"rate": 22050,
+"text": "Agent Dark, Mission Log, 1846 hours. Last night, we got a call from Cassandra de Vriese. A dataDyne team have taken Daniel Carrington hostage at his private villa on the coast. And the Seder will spare his life in exchange for the AI.",
+"f0": 190.5
+},
+"p5_02_jo.mp3": {
+"secs": 12.173,
+"rate": 22050,
+"text": "Unfortunately, we don't have it. Daniel and Dr. Carroll were at the villa to discuss matters of mutual interest. It looks like Daniel found a way to hide Dr. Carroll inside the villa, when the dataDyne Hit Squad arrived.",
+"f0": 179.8
+},
+"p5_03_jo.mp3": {
+"secs": 8.751,
+"rate": 22050,
+"text": "Hopefully our phoney negotiator ploy will give me a chance to surprise the dataDyne squad. This time, it's not just my life on the line.",
+"f0": 175.8
+},
+"p6_01_jo.mp3": {
+"secs": 1.437,
+"rate": 22050,
+"text": "Sir, are you injured?",
+"f0": 310.7
+},
+"p6_02_ca.mp3": {
+"secs": 8.62,
+"rate": 22050,
+"text": "No, Jorna, I'm okay. But those dataDyne thugs made me tell them where I'd hidden Dr. Cowell. Only I'd held out for a few minutes more.",
+"f0": 120.3
+},
+"p6_03_jo.mp3": {
+"secs": 2.821,
+"rate": 22050,
+"text": "It's not your fault, sir. I should have been quicker.",
+"f0": 205.1
+},
+"p6_04_ca.mp3": {
+"secs": 21.316,
+"rate": 22050,
+"text": "Don't blame yourself, Joanna. Dr. Carroll told me that he expected this to happen. Actually, when they recaptured them, the day-to-daying team got overconfident, and let's live a few facts when they thought I was unconscious. They mentioned a meeting in the G5 building in Chicago, Illinois tonight. I want you to be there. But that doesn't leave you a lot of time to get ready.",
+"f0": 124.0
+},
+"p6_05_jo.mp3": {
+"secs": 5.303,
+"rate": 22050,
+"text": "That won't be a problem, sir. So, did Dr. Carroll have any useful information for you?",
+"f0": 222.2
+},
+"p6_06_ca.mp3": {
+"secs": 18.181,
+"rate": 22050,
+"text": "Oh, yes, indeed. He certainly did. And I'll brief you when you're on your route to Chicago. We might still be able to help him, even after those butchers remove his personality. He thinks I'll keep a copy of it in a safe place. About time I called in some friends to deal with Datedine.",
+"f0": 124.0
+},
+"p7_01_ca.mp3": {
+"secs": 15.569,
+"rate": 22050,
+"text": "We suspect the G5 Corporation is just a front for dataDyne and whoever else is involved in this plot. I know Cassandra de Vries is going to be here, but I need to know who else is attending and what they discuss. By the time you get out, the help I requested should have arrived.",
+"f0": 137.9
+},
+"p7_02_jo.mp3": {
+"secs": 3.004,
+"rate": 22050,
+"text": "Just who is this help you keep referring to?",
+"f0": 213.3
+},
+"p7_03_ca.mp3": {
+"secs": 3.004,
+"rate": 22050,
+"text": "Not now, Joanna. Time for radio silence. Good luck!",
+"f0": 161.6
+},
+"p7_04_jo.mp3": {
+"secs": 1.437,
+"rate": 22050,
+"text": "Thanks a lot.",
+"f0": 141.0
+},
+"p8_01_dv.mp3": {
+"secs": 6.87,
+"rate": 22050,
+"text": "We've recovered the sapient from Carrington and altered its programming. It no longer has a personality, so there will be no further incidents.",
+"f0": 197.5
+},
+"p8_02_bl.mp3": {
+"secs": 12.434,
+"rate": 22050,
+"text": "This will reduce its efficiency. My team will have to take it to the core themselves. This will endanger them. You should have anticipated that the sapient might develop a troublesome moral code.",
+"f0": 95.8
+},
+"p8_03_dv.mp3": {
+"secs": 4.807,
+"rate": 22050,
+"text": "No one could have predicted that, and I resent being singled out for blame. What about him?",
+"f0": 231.9
+},
+"p8_04_bl.mp3": {
+"secs": 3.814,
+"rate": 22050,
+"text": "The president turned down your request for the loan of the pelagic too.",
+"f0": 97.6
+},
+"p8_06_bl.mp3": {
+"secs": 4.676,
+"rate": 22050,
+"text": "Could it be you overestimated your influence over him?",
+"f0": 90.1
+},
+"p8_07_tr.mp3": {
+"secs": 15.256,
+"rate": 22050,
+"text": "No, perhaps I underestimated his resolve. We have a contingency plan ready to go and we will move as soon as the presidential on rush arrives at the air base. All I need from the president is a tissue sample.",
+"f0": 144.1
+},
+"p8_08_dv.mp3": {
+"secs": 6.374,
+"rate": 22050,
+"text": "Ha! Assume you don't get any interference. If Carrington has pieced together enough of this, he will have called for reinforcements.",
+"f0": 225.4
+},
+"p8_09_tr.mp3": {
+"secs": 11.311,
+"rate": 22050,
+"text": "There will be no outside help from Mr. Carrington. The technology you gave us is installed in Nevada and fully operational. We can intercept any craft they use.",
+"f0": 131.1
+},
+"p8_10_bl.mp3": {
+"secs": 12.931,
+"rate": 22050,
+"text": "Then the devices we gave you are working correctly. Good, because we believe anything which does not work correctly should be destroyed. Consider that as you follow your backup plans.",
+"f0": 89.6
+},
+"p9_01_jo.mp3": {
+"secs": 8.438,
+"rate": 22050,
+"text": "Agent Dark reporting in. Prepare to receive a download of the meeting data. Priority request for an Institute Support Team to protect the President before he goes to Alaska.",
+"f0": 235.3
+},
+"p9_02_ca.mp3": {
+"secs": 21.055,
+"rate": 22050,
+"text": "No time for that now, Agent Dark. There's been a development during Radio Silence. The craft carrying those friends I was talking about was shot down over Nevada. The weapon responsible was found from Area 51. That's where the survivors in debris will have been taken. You have to prep for immediate dispatch when you return here. Carrington out.",
+"f0": 146.8
+},
+"p9_03_jo.mp3": {
+"secs": 2.56,
+"rate": 22050,
+"text": "Area 51, but what about the President?",
+"f0": 285.7
+},
+"pelelv01.mp3": {
+"secs": 5.12,
+"rate": 22050,
+"text": "You go on ahead, Joe. I'll secure the perimeter. We'll meet up later.",
+"f0": 271.2
+},
+"pelelv02.mp3": {
+"secs": 5.068,
+"rate": 22050,
+"text": "Jo-Ann, what took you so long? Follow me! Let's get off this old tub!",
+"f0": 333.3
+},
+"pelgrd01.mp3": {
+"secs": 1.489,
+"rate": 22050,
+"text": "Die, you traitors!",
+"f0": 256.0
+},
+"recep01.mp3": {
+"secs": 0.862,
+"rate": 22050,
+"text": "Good afternoon!",
+"f0": 228.6
+},
+"recep02.mp3": {
+"secs": 1.62,
+"rate": 22050,
+"text": "Okay, you know the way from here.",
+"f0": 200.0
+},
+"recep03.mp3": {
+"secs": 1.646,
+"rate": 22050,
+"text": "You'll have to check that weapon in here.",
+"f0": 225.4
+},
+"recep04.mp3": {
+"secs": 1.933,
+"rate": 22050,
+"text": "Weapons are not allowed in the base!",
+"f0": 225.4
+},
+"recep05.mp3": {
+"secs": 0.993,
+"rate": 22050,
+"text": "Oh my god!",
+"f0": 666.7
+},
+"recep06.mp3": {
+"secs": 2.064,
+"rate": 22050,
+"text": "Right! I'm calling security!",
+"f0": 290.9
+},
+"rlguard1.mp3": {
+"secs": 1.489,
+"rate": 22050,
+"text": "Will you just hurry up?",
+"f0": 242.4
+},
+"rltech01.mp3": {
+"secs": 1.802,
+"rate": 22050,
+"text": "That's not how it goes!",
+"f0": 290.9
+},
+"rltech02.mp3": {
+"secs": 1.933,
+"rate": 22050,
+"text": "Give it to me, you're doing it wrong!",
+"f0": 246.2
+},
+"rltech03.mp3": {
+"secs": 1.489,
+"rate": 22050,
+"text": "Oh no! Too late!",
+"f0": 326.5
+},
+"rltech04.mp3": {
+"secs": 0.993,
+"rate": 22050,
+"text": "Yes it is!",
+"f0": 344.1
+},
+"rltech05.mp3": {
+"secs": 1.254,
+"rate": 22050,
+"text": "Stop annoying me!",
+"f0": 190.5
+},
+"rltech06.mp3": {
+"secs": 0.993,
+"rate": 22050,
+"text": "She's here!",
+"f0": 347.8
+},
+"saucerexp1.mp3": {
+"secs": 10.005,
+"rate": 22050,
+"text": "Thanks for watching!",
+"f0": null
+},
+"scie2a.mp3": {
+"secs": 2.116,
+"rate": 22050,
+"text": "I haven't seen you before!",
+"f0": 262.3
+},
+"scie2b.mp3": {
+"secs": 1.437,
+"rate": 22050,
+"text": "Should you be in here?",
+"f0": 307.7
+},
+"scie2c.mp3": {
+"secs": 1.75,
+"rate": 22050,
+"text": "Please, don't hurt me!",
+"f0": 326.5
+},
+"scie2d.mp3": {
+"secs": 1.933,
+"rate": 22050,
+"text": "It looks like it's off already!",
+"f0": 355.6
+},
+"scie2e.mp3": {
+"secs": 1.802,
+"rate": 22050,
+"text": "What's happened to the terminal?",
+"f0": 340.4
+},
+"scie2f.mp3": {
+"secs": 2.247,
+"rate": 22050,
+"text": "There! The experiment is down!",
+"f0": 250.0
+},
+"scie2g.mp3": {
+"secs": 1.62,
+"rate": 22050,
+"text": "I'm calling security!",
+"f0": 381.0
+},
+"scie3a.mp3": {
+"secs": 1.384,
+"rate": 22050,
+"text": "Who the hell are you?",
+"f0": 301.9
+},
+"scie3b.mp3": {
+"secs": 1.802,
+"rate": 22050,
+"text": "LEAVE THIS AREA NOW!",
+"f0": 200.0
+},
+"scie3c.mp3": {
+"secs": 1.881,
+"rate": 22050,
+"text": "Allow me to assist you.",
+"f0": 173.9
+},
+"scie3d.mp3": {
+"secs": 2.299,
+"rate": 22050,
+"text": "Have you been tampering with this?",
+"f0": 219.5
+},
+"scie3e.mp3": {
+"secs": 2.377,
+"rate": 22050,
+"text": "You vandal! You've broken it!",
+"f0": 266.7
+},
+"scie3g.mp3": {
+"secs": 2.56,
+"rate": 22050,
+"text": "Accidents will happen.",
+"f0": 134.5
+},
+"scien10a.mp3": {
+"secs": 1.959,
+"rate": 22050,
+"text": "Someone's broken my equipment!",
+"f0": 320.0
+},
+"scien2_a.mp3": {
+"secs": 1.254,
+"rate": 22050,
+"text": "Stop shooting!",
+"f0": 351.7
+},
+"scien3_a.mp3": {
+"secs": 1.306,
+"rate": 22050,
+"text": "My experiments!",
+"f0": 313.7
+},
+"scien4_a.mp3": {
+"secs": 1.489,
+"rate": 22050,
+"text": "I'll shut it down",
+"f0": 203.8
+},
+"scien5_a.mp3": {
+"secs": 2.56,
+"rate": 22050,
+"text": "Help! Help! She's got a gun!",
+"f0": 390.2
+},
+"scien6_a.mp3": {
+"secs": 2.194,
+"rate": 22050,
+"text": "What are you doing in my lab?",
+"f0": 326.5
+},
+"scien7_a.mp3": {
+"secs": 1.75,
+"rate": 22050,
+"text": "security",
+"f0": 381.0
+},
+"scien9_a.mp3": {
+"secs": 1.254,
+"rate": 22050,
+"text": "How did that happen?",
+"f0": 320.0
+},
+"trcarr01.mp3": {
+"secs": 3.004,
+"rate": 22050,
+"text": "Come with me. I'll walk you around the training rooms.",
+"f0": 111.9
+},
+"trcarr02.mp3": {
+"secs": 1.959,
+"rate": 22050,
+"text": "This is the firing range, Joe.",
+"f0": 99.4
+},
+"trcarr03.mp3": {
+"secs": 1.959,
+"rate": 22050,
+"text": "In here we have the device lab.",
+"f0": 128.5
+},
+"trcarr04.mp3": {
+"secs": 2.508,
+"rate": 22050,
+"text": "The information center is through this door.",
+"f0": 124.0
+},
+"trcarr05.mp3": {
+"secs": 2.377,
+"rate": 22050,
+"text": "This leads to the Simulant Training Room.",
+"f0": 137.3
+},
+"trcarr06.mp3": {
+"secs": 2.116,
+"rate": 22050,
+"text": "You'll have to do better than that, Joanna.",
+"f0": 101.9
+},
+"trcarr07.mp3": {
+"secs": 2.377,
+"rate": 22050,
+"text": "Joanna, where did you spring from?",
+"f0": 210.5
+},
+"trcarr08.mp3": {
+"secs": 3.187,
+"rate": 22050,
+"text": "I think we can safely say your training is now complete.",
+"f0": 121.2
+},
+"trcarr09.mp3": {
+"secs": 1.646,
+"rate": 22050,
+"text": "What is it, Joanna?",
+"f0": 121.2
+},
+"trcarr10.mp3": {
+"secs": 2.743,
+"rate": 22050,
+"text": "I'm a little busy at the moment, Agent Dark.",
+"f0": 139.1
+},
+"trcarr11.mp3": {
+"secs": 2.299,
+"rate": 22050,
+"text": "We're all very proud of you, Joe.",
+"f0": 109.6
+},
+"trcarr12.mp3": {
+"secs": 2.116,
+"rate": 22050,
+"text": "This corridor leads down to the hangar.",
+"f0": 133.3
+},
+"trfost01.mp3": {
+"secs": 2.56,
+"rate": 22050,
+"text": "I'm sure I didn't need to tell you what to shoot at.",
+"f0": 170.2
+},
+"trfost02.mp3": {
+"secs": 2.926,
+"rate": 22050,
+"text": "I've zeroed the site. The rest is up to you.",
+"f0": 177.8
+},
+"trfost03.mp3": {
+"secs": 3.396,
+"rate": 22050,
+"text": "I'm expecting a good show. Don't let me down.",
+"f0": 168.4
+},
+"trgrim01.mp3": {
+"secs": 3.814,
+"rate": 22050,
+"text": "Yeah, go away, Joanne. You're not fooling anybody.",
+"f0": 271.2
+},
+"trgrim02.mp3": {
+"secs": 3.004,
+"rate": 22050,
+"text": "Here you go. Don't drop it now.",
+"f0": 207.8
+},
+"trjo01.mp3": {
+"secs": 1.489,
+"rate": 22050,
+"text": "I'm here to pick up the equipment.",
+"f0": 252.0
+},
+"trroge01.mp3": {
+"secs": 2.064,
+"rate": 22050,
+"text": "We were ready for you a half hour ago.",
+"f0": 205.1
+},
+"vault2.mp3": {
+"secs": 5.303,
+"rate": 22050,
+"text": "Intruder alert! All security to the vault!",
+"f0": 213.3
+},
+"vilgrim.mp3": {
+"secs": 7.367,
+"rate": 22050,
+"text": "Joanna, it's Grimshaw. We got hackers at the villa. You gotta stop them before they get to our files.",
+"f0": 271.2
+},
+"wepgd01.mp3": {
+"secs": 1.567,
+"rate": 22050,
+"text": "I'm not sure.",
+"f0": 142.2
+},
+"wepgd02.mp3": {
+"secs": 1.176,
+"rate": 22050,
+"text": "One more time!",
+"f0": 207.8
+},
+"wepgd03.mp3": {
+"secs": 1.254,
+"rate": 22050,
+"text": "I don't know.",
+"f0": 130.1
+},
+"wepsc01.mp3": {
+"secs": 0.81,
+"rate": 22050,
+"text": "And again?",
+"f0": 175.8
+},
+"wepsc02.mp3": {
+"secs": 0.94,
+"rate": 22050,
+"text": "Try it now?",
+"f0": 197.5
+},
+"wepsc03.mp3": {
+"secs": 0.862,
+"rate": 22050,
+"text": "Any better?",
+"f0": 209.2
+}
+}
