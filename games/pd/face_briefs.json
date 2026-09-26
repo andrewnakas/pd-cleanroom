@@ -1,0 +1,18 @@
+{
+  "_doc": "Written from one look at the dirty head-texture sheet. Heads are 32x64, stored upside down. Kinds for the procedural painter (faces.py); side/back kinds not listed here are measured (ear side).",
+  "front": ["0320","055d","0561","0564","0567","056a","056e","0570","0578","057b","057f","0581","0584","0587","058a","058f",
+            "0591","0597","059a","059d","05a3","05a6","05bb","05ca","05d9","05ec","075a","0790","0792","07a1","07f4","0815","0819",
+            "082c","0a8b","0a9e","0abf","0ac2","0d24","0d28","0d2b","0d35","0d38","0d3c","0d3f","0d44",
+            "0d77","0d7a","0d7d","0d80","0d83","0d86","0d8a","0d8d","0d90","0d94","0d96","0d99","0d9c"],
+  "back": ["0590","05bc","05bd","0816","0817","0a9c","0a9d","0d27"],
+  "exclude": ["01b4","01b9","01ba","01bd","01be","01cb","01d9","0254","0450","063f","091c","0929","0936","0a77","0a78","0c1a","0cbc"],
+  "traits": {
+    "0561": {"skin_note": "greenish light", "eye": [70, 110, 60]},
+    "0815": {"eye": [70, 110, 60]},
+    "0d8a": {"mouth": "open"},
+    "058f": {"beard": true},
+    "0d28": {"beard": true},
+    "057f": {"moustache": true},
+    "0a8b": {"moustache": true}
+  }
+}
