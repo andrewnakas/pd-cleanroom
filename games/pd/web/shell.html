@@ -93,7 +93,7 @@ function devHooks(t0) {
       return node;
     };
   }
-  if (Q.has('hb')) setInterval(function () { console.log('hb ' + Math.round(performance.now() - t0) + ' frames ' + pdFrames); }, 1000);
+  if (Q.has('hb')) setInterval(function () { console.log('hb ' + Math.round(performance.now() - t0) + ' frames ' + pdFrames + ' canvas ' + Module.canvas.width + 'x' + Module.canvas.height + ' css ' + Module.canvas.clientWidth + 'x' + Module.canvas.clientHeight); }, 1000);
   var dumps = (Q.get('dump') || '').split(',').filter(Boolean).map(Number);
   dumps.forEach(function (s, k) {
     setTimeout(function () {
