@@ -185,7 +185,13 @@ def build(only=None):
     print("voices built:", n)
 
 
+RESEED = {}
+
+
 def write_pack(pack):
+    global RESEED
+    rp = os.path.join(HERE, "reseed.json")
+    RESEED = {k[6:]: v for k, v in json.load(open(rp)).items() if k.startswith("voice/")} if os.path.exists(rp) else {}
     """Encode cached/recorded lines into files/<name> (the A-file names from the layout)."""
     lay = json.load(open(os.path.join(HERE, "spec", "rom_layout.json")))
     L = lines()
@@ -203,6 +209,10 @@ def write_pack(pack):
         if not os.path.exists(src):
             continue
         x, rate = wav_read(src)
+        # faint seeded noise floor (~-60 dBFS): near-silent stretches otherwise decode to the same
+        # tiny sample patterns as any other MP3 (taint scan); re-rolled per line via reseed.json
+        seed = int.from_bytes(key.encode()[:8].ljust(8, b"_"), "little") + 7919 * RESEED.get(key, 0)
+        x = x + np.random.default_rng(seed & 0xffffffff).normal(0, 0.001, len(x)).astype(np.float32)
         p = os.path.join(pack, "files", f["name"])
         os.makedirs(os.path.dirname(p), exist_ok=True)
         open(p, "wb").write(mp3_bytes(x, L[key]["rate"] if rate == L[key]["rate"] else rate))
