@@ -73,6 +73,24 @@ def cast(name, f0):
     return MALE_DEFAULTS[sum(map(ord, who)) % len(MALE_DEFAULTS)]
 
 
+GROUPS = [("joanna", ("jo",)), ("carrington", ("ca", "carr", "car")), ("elvis", ("el", "elv", "ael")),
+          ("cassandra", ("dv", "devr")), ("trent", ("tr",)), ("president", ("pr",)), ("jonathan", ("jn", "jon")),
+          ("drcaroll", ("dr", "droid")), ("blonde", ("bl",))]
+
+
+def group(name, f0=None):
+    """Recording group (main character, else extras by voice register) for the practice pack."""
+    who = speaker(name)
+    for g, codes in GROUPS:
+        if who in codes or any(who.endswith(c) and len(c) >= 2 and who != "sci" for c in codes if len(c) >= 3):
+            return g
+        if who.startswith(("a51", "af1", "ci", "inv", "tr", "pel", "joexec", "joinst", "jorep", "jorpld", "josci")):
+            base = who[3:] if who.startswith(("a51", "af1", "pel", "inv")) else who[2:] if who.startswith(("ci", "tr")) else who
+            if base in codes or who.startswith("jo"):
+                return "joanna" if who.startswith("jo") else g
+    return "extras_female" if (f0 or 0) > 165 else "extras_male"
+
+
 def lines():
     return json.load(open(os.path.join(HERE, "spec", "voices.json")))
 

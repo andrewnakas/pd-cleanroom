@@ -24,10 +24,15 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 def plan():
     L = voices.lines()
-    tracks = {}
+    tracks, extras = {}, []
     for name, d in sorted(L.items()):
-        who = voices.speaker(name)
-        tracks.setdefault(who, []).append((name, d))
+        who = voices.group(name, d.get("f0"))
+        if who.startswith("extras"):
+            extras.append((name, d))
+        else:
+            tracks.setdefault(who, []).append((name, d))
+    for i in range(0, len(extras), 40):       # guards, scientists, staff: ~40 lines per track
+        tracks["extras%d" % (i // 40 + 1)] = extras[i:i + 40]
     return tracks
 
 

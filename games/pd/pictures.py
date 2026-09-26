@@ -22,10 +22,16 @@ MISSIONS = [("0385", 0x30), ("0617", 0x33), ("0618", 0x22), ("0619", 0x2c), ("06
             ("061c", 0x2f), ("061d", 0x35), ("061e", 0x19), ("061f", 0x27), ("0620", 0x31), ("0621", 0x1c),
             ("0622", 0x21), ("0623", 0x38), ("0624", 0x2d), ("0625", 0x34), ("0626", 0x2a), ("0b4f", 0x37),
             ("0b52", 0x09), ("0b50", 0x16), ("0b51", 0x4f)]
-SECS = [6, 9, 12, 15]
+SECS = [5, 8, 11, 14, 18, 22, 26]
+# frames chosen by eye where the automatic score picks fog/flash frames (index into the shots)
+PICK = {"0385": 4, "061c": 1, "0b51": 5}
 
 
 def shrink(img, w=56, h=36):
+    rows = img[..., :3].astype(np.float32).mean((1, 2))
+    live = np.nonzero(rows > 6)[0]                  # crop cutscene letterbox bars
+    if len(live):
+        img = img[live[0]:live[-1] + 1]
     H, W = img.shape[:2]
     # crop the centre to the slot aspect, box-filter down
     ar = w / h
@@ -61,6 +67,8 @@ def capture(url, tex, stage):
         if os.path.isdir(out) else []
     if not shots:
         return None
+    if tex in PICK and PICK[tex] < len(shots):
+        return shrink(png.read(shots[PICK[tex]]))
     best = max((png.read(p) for p in shots), key=score)
     return shrink(best)
 
