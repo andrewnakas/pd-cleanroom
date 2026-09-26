@@ -114,10 +114,11 @@ def main(argv):
             raw = bytearray(unzip(blob))
             tcs = pdmodel.texconfigs(bytes(raw))
             facts = []
-            for tc in tcs:
-                n = pdmodel.size_bytes(tc["w"], tc["h"], tc["siz"])
+            lims = pdmodel.limits(bytes(raw), tcs)
+            for tc, n in zip(tcs, lims):
                 im = pdmodel.decode(bytes(raw), tc)
                 f = {k: tc[k] for k in ("index", "ofs", "w", "h", "fmt", "siz")}
+                f["len"] = n
                 if im is not None:
                     g = 16 if max(tc["w"], tc["h"]) >= 128 else 4
                     f["grid"] = grid(im.astype(np.float32), g)

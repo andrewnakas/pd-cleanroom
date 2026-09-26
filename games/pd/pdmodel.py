@@ -75,10 +75,31 @@ def decode(buf, tc):
     return texfmt.decode(_tight(raw, tc["w"], tc["h"], tc["siz"]), tc["w"], tc["h"], tc["fmt"], tc["siz"])
 
 
-def encode(rgba, tc):
+def encode(rgba, tc, seed=0):
     from games.pd.pdtex import dither
     step = {2: 8, 1: 16, 0: 32}.get(tc["siz"], 0) if tc["fmt"] in (0, 3, 4) else 0
     if step:
-        rgba = dither(rgba, step)
+        g = rgba.astype(np.float32)
+        rng = np.random.default_rng((tc["ofs"] * 31 + tc["w"] + seed * 7919) & 0xffffffff)
+        g[..., :3] += rng.normal(0, step * 0.6, g.shape[:2])[..., None]
+        rgba = dither(np.clip(g, 0, 255).astype(np.uint8), step)
     raw = _padded(texfmt.encode(rgba, tc["fmt"], tc["siz"]), tc["w"], tc["h"], tc["siz"])
     return swizzle(raw, tc["w"], tc["h"], tc["siz"])
+
+
+def limits(buf, tcs):
+    """Bytes actually available to each embedded texture: up to the nearest file pointer
+    target after it (texconfig sizes are sometimes larger than the stored data)."""
+    spans = [(tc["ofs"], tc["ofs"] + size_bytes(tc["w"], tc["h"], tc["siz"])) for tc in tcs]
+    targets = set()
+    for p in range(0, len(buf) - 3, 4):
+        if any(a <= p < b for a, b in spans):
+            continue
+        v = int.from_bytes(buf[p:p + 4], "big")
+        if (v >> 24) == 0x05 and (v & 0xffffff) < len(buf):
+            targets.add(v & 0xffffff)
+    out = []
+    for tc, (a, b) in zip(tcs, spans):
+        nxt = min([t for t in targets if t > a] + [len(buf)])
+        out.append(max(0, min(b, nxt) - a))
+    return out

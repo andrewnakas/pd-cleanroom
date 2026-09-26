@@ -58,6 +58,10 @@ def _load():
 
 
 def texture_hook(key, d):
+    from games.pd import pictures
+    img = pictures.hook(key, d)
+    if img is not None:
+        return img
     lab = _load().get(key)
     if lab:
         from games.pd import labels

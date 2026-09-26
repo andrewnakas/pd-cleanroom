@@ -21,6 +21,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SPEC = os.path.join(HERE, "spec")
 KEPT = os.path.join(SPEC, "kept")
 DECOMP_ASSETS = os.environ.get("PD_DECOMP_ASSETS", "D:/n64work/pd/pcport/src/assets/ntsc-final")
+# taint veto list: keys whose grain/jitter seed is re-rolled because the scan found a coincidental
+# run with some retail image (the scan only says "re-roll"; nothing retail flows into outputs)
+RESEED = os.path.join(HERE, "reseed.json")
 FMT = {n: i for i, n in enumerate(pdtex.NAMES)}
 
 
@@ -44,6 +47,7 @@ def texture_rgba(key, d, hooks):
 
 def build_textures(pack, hooks=()):
     T = load("textures.json")
+    reseed = json.load(open(RESEED)) if os.path.exists(RESEED) else {}
     data, lst = bytearray(), bytearray()
     rows = json.load(open(os.path.join(DECOMP_ASSETS, "textures.json")))   # decomp source: surface types
     flags = [((r["flag00"] & 15) << 4) | (r["surfacetype"] & 15) for r in rows]
@@ -55,7 +59,7 @@ def build_textures(pack, hooks=()):
         if not d:
             continue
         rgba = texture_rgba(key, d, hooks)
-        blob = pdtex.encode(rgba, FMT[d["fmt"]], d["numlods"], d.get("ncol"))
+        blob = pdtex.encode(rgba, FMT[d["fmt"]], d["numlods"], d.get("ncol"), reseed.get(key, 0))
         data += blob
     lst += len(data).to_bytes(4, "big") + bytes(4)
     write(pack, "segs/texturesdata", bytes(data))
@@ -67,6 +71,7 @@ def build_textures(pack, hooks=()):
 
 def build_models(pack, hooks=()):
     M = load("models.json")
+    reseed = json.load(open(RESEED)) if os.path.exists(RESEED) else {}
     n = 0
     for name, facts in M.items():
         raw = bytearray(open(os.path.join(KEPT, "files", name), "rb").read())
@@ -76,8 +81,9 @@ def build_models(pack, hooks=()):
                 continue
             key = "%s#%d" % (name, f["index"])
             rgba = texture_rgba(key, f, hooks)
-            blob = pdmodel.encode(rgba, tc)
-            raw[f["ofs"]:f["ofs"] + len(blob)] = blob[:len(raw) - f["ofs"]]
+            blob = pdmodel.encode(rgba, tc, reseed.get(key, 0))
+            ln = min(f.get("len", len(blob)), len(blob))
+            raw[f["ofs"]:f["ofs"] + ln] = blob[:ln]
             n += 1
         write(pack, "files/" + name, pdtex.rzip_deflate(bytes(raw)))
     # model files without embedded textures: kept geometry, zipped as stored

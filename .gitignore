@@ -7,3 +7,4 @@ __pycache__/
 baserom*
 games/pd/spec/kept/
 games/pd/voices/_raw/
+games/pd/spec/voices.partial.jsonl

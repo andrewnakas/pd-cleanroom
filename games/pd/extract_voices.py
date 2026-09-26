@@ -54,8 +54,7 @@ def main(argv):
         f0 = median_f0(x.astype(np.float32), 16000)
         out[fn] = {"secs": round(n / rate, 3), "rate": rate, "text": text, "f0": round(float(f0), 1) if f0 else None}
         with open(part, "a") as fp:
-            fp.write(json.dumps([fn, out[fn]]) + "
-")
+            fp.write(json.dumps([fn, out[fn]]) + "\n")
         if i % 50 == 0:
             print(i, fn, out[fn], flush=True)
     json.dump(out, open(os.path.join(spec, "voices.json"), "w"), indent=0)

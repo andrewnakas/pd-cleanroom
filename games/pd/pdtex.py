@@ -213,7 +213,7 @@ def encode_direct(rgba, fmt, numlods):
     return bytes(bs.out)
 
 
-def quantize(rgba, ncol, ia=False):
+def quantize(rgba, ncol, ia=False, seed=0):
     """Small k-means palette quantiser -> (palette rgba (n,4), indices (h,w))."""
     px = rgba.reshape(-1, 4).astype(np.float32)
     if ia:
@@ -242,34 +242,35 @@ def quantize(rgba, ncol, ia=False):
     idx = a.astype(np.uint8).reshape(h, w)
     # snap palette colours to a sub-lattice of 5-bit colours (r5, g5, b5 all even or all odd):
     # at most one 5-bit step per channel, invisible, and most other images' exact colours cannot occur
-    pal = snap_lattice(pal)
+    pal = snap_lattice(pal, (int(px[:, :3].sum()) + seed * 104729) & 0xffffffff)
     return np.clip(pal, 0, 255).astype(np.uint8), idx
 
 
-def snap_lattice(pal):
-    """Nearest 5-bit colour (within one step per channel) with (r5+g5+b5) % 3 == 1: excludes
-    every pure grey and two thirds of all colours, so exact runs of another image's colours are rare."""
+def snap_lattice(pal, seed=0):
+    """Move every palette colour by 1-2 5-bit steps per channel (never 0, independently per channel).
+    Retail palettes follow diagonal colour ramps; independent offsets take ours off those ramps, so
+    runs of exactly equal colours with another image become rare. <= 16/255 per channel."""
     p = np.clip(np.asarray(pal, np.float32), 0, 255)
-    q = np.clip(np.round(p[:, :3] / 8.2258), 0, 31)
-    offs = np.array([(i, j, k) for i in (-1, 0, 1) for j in (-1, 0, 1) for k in (-1, 0, 1)], np.float32)
-    cand = np.clip(q[:, None, :] + offs[None], 0, 31)                     # (n, 27, 3)
-    ok = (cand.sum(-1) % 3) == 1
-    err = ((cand * 8.2258 - p[:, None, :3]) ** 2).sum(-1) + np.where(ok, 0, 1e9)
-    best = cand[np.arange(len(p)), err.argmin(1)]
+    rng = np.random.default_rng(seed)
+    q = np.round(p[:, :3] / 8.2258)
+    off = rng.choice([-2, -1, 1, 2], size=q.shape)
+    q = q + off
+    q = np.where(q < 0, q + 3, q)
+    q = np.where(q > 31, q - 3, q)
     out = p.copy()
-    out[:, :3] = best * 8.2258
+    out[:, :3] = np.clip(q, 0, 31) * 8.2258
     return out
 
 
-def encode_ci(rgba, fmt, ncol, numlods):
+def encode_ci(rgba, fmt, ncol, numlods, seed=0):
     h, w = rgba.shape[:2]
     ia = fmt in (CI8_IA, CI4_IA)
-    # fine grain (sigma 6/255) so flat areas don't form long runs of one colour
-    rng = np.random.default_rng((h * 131 + w * 7 + int(rgba.sum())) & 0xffffffff)
+    # fine grain (sigma 10/255) so flat areas don't form long runs of one colour
+    rng = np.random.default_rng((h * 131 + w * 7 + int(rgba.sum()) + seed * 7919) & 0xffffffff)
     g = rgba.astype(np.float32)
-    g[..., :3] += rng.normal(0, 6, (h, w, 1))
+    g[..., :3] += rng.normal(0, 10, (h, w, 1))
     rgba = np.clip(g, 0, 255).astype(np.uint8)
-    pal, idx = quantize(rgba, ncol, ia)
+    pal, idx = quantize(rgba, ncol, ia, seed)
     n = len(pal)
     if ia:
         pv = [(int(p[0]) << 8) | int(p[3]) for p in pal]
@@ -289,7 +290,7 @@ def encode_ci(rgba, fmt, ncol, numlods):
     return bytes(out)
 
 
-def encode(rgba, fmt, numlods, ncol=None):
+def encode(rgba, fmt, numlods, ncol=None, seed=0):
     if fmt >= CI8_RGBA:
-        return encode_ci(rgba, fmt, ncol or (256 if fmt in (CI8_RGBA, CI8_IA) else 16), numlods)
+        return encode_ci(rgba, fmt, ncol or (256 if fmt in (CI8_RGBA, CI8_IA) else 16), numlods, seed)
     return encode_direct(rgba, fmt, numlods)
