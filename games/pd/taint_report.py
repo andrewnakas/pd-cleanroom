@@ -37,13 +37,20 @@ def textures(data, lst):
     return [("tex/%04x" % k, v["rgba"].tobytes()) for k, v in sorted(res.items()) if v]
 
 
-def model_tex(files):
+def model_tex(files, ref=None):
+    """Decoded texels of embedded textures, only over the bytes that are really texture
+    (texconfig sizes can overstate them; what follows is kept geometry). ref: raw retail
+    files to take the bounds from (same layout), default the file itself."""
     out = []
     for name, raw in files:
-        for tc in pdmodel.texconfigs(raw):
+        tcs = pdmodel.texconfigs(raw)
+        lims = pdmodel.limits(ref[name] if ref else raw, tcs)
+        for tc, n in zip(tcs, lims):
             im = pdmodel.decode(raw, tc)
-            if im is not None:
-                out.append(("mdl/%s#%d" % (name, tc["index"]), im.tobytes()))
+            if im is None:
+                continue
+            rows = n // pdmodel.row_bytes(tc["w"], tc["siz"])        # whole texel rows inside the bound
+            out.append(("mdl/%s#%d" % (name, tc["index"]), im[:rows].tobytes()))
     return out
 
 
