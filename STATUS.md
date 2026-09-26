@@ -21,6 +21,12 @@
 | voice MP3s (548 A* files) | placeholder Piper TTS, practice pack for the user |
 | copyright / accessingpak images | redrawn |
 
+## Published (2026-09-26)
+- Repo: https://github.com/andrewnakas/pd-cleanroom (public). Site: https://andrewnakas.github.io/pd-cleanroom/ (gh-pages).
+- Taint report: 0 failing in every group (textures 3502, model textures 479, fonts, banner, 961 samples, 548 voices).
+  Veto re-rolls recorded in games/pd/reseed.json (grain/jitter seeds only).
+- Final headless check on the clean site: intro -> title -> menus; Defection plays (HUD, gun, audio -17 dB, no errors).
+
 ## Works
 - Dirty spec: textures (3503, decoded with the game's own decompressor in a host harness), 481 embedded model
   textures, fonts (metrics+kerning kept), sfx/seq banks (961 waves), 548 voice lines (Whisper words), heads (faces.json).
