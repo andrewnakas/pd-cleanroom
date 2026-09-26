@@ -1,0 +1,279 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index f5bb7eb..d8fceac 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -16,6 +16,7 @@ project(pd C CXX)
+ include(TargetArch)
+ include(FindPkgConfig)
+ include(AssetUtils)
++set(PD_PYTHON "" CACHE STRING "interpreter for the asset header scripts (python on Windows hosts)")
+ 
+ set(CMAKE_C_STANDARD 11)
+ set(CMAKE_C_EXTENSIONS OFF)
+@@ -37,7 +38,11 @@ option(FORCE_CROSSCOMPILE "Force cross compiling" NO)
+ 
+ # Determine target arch
+ 
+-target_architecture(TARGET_ARCH)
++if(EMSCRIPTEN)
++  set(TARGET_ARCH "wasm32")
++else()
++  target_architecture(TARGET_ARCH)
++endif()
+ if(TARGET_ARCH STREQUAL "i386")
+   # for historical reasons
+   set(TARGET_ARCH "i686")
+@@ -58,7 +63,9 @@ message(STATUS "Target arch: ${TARGET_ARCH}")
+ 
+ # Determine target OS and platform identifier ($arch-$os)
+ 
+-if(WIN32)
++if(EMSCRIPTEN)
++  set(TARGET_OS "web")
++elseif(WIN32)
+   # Windows
+   set(TARGET_OS "windows")
+ elseif(APPLE)
+@@ -210,6 +217,15 @@ endif()
+ 
+ set(LIBS )
+ 
++if(EMSCRIPTEN)
++  # SDL2, zlib and GL come from emscripten ports; see link options below
++  add_compile_options(-sUSE_SDL=2 -sUSE_ZLIB=1)
++  set(SDL2_INCLUDE_DIR "")
++  set(SDL2_LIBRARY "")
++  set(ZLIB_LIBRARY "")
++  set(GL_LIBRARY "")
++  set(EXTRA_LIBRARIES "")
++else()
+ # SDL2
+ find_package(SDL2 REQUIRED)
+ if(NINTENDO_SWITCH)
+@@ -228,9 +244,10 @@ if(ZLIB_INCLUDE_DIR)
+   include_directories(SYSTEM "${ZLIB_INCLUDE_DIR}")
+ endif()
+ list(APPEND LIBS "${ZLIB_LIBRARY}")
++endif()
+ 
+ # GL
+-if(NOT GL_LIBRARY)
++if(NOT GL_LIBRARY AND NOT EMSCRIPTEN)
+   if(WIN32)
+     set(GL_LIBRARY opengl32)
+   elseif(NINTENDO_SWITCH)
+@@ -244,7 +261,7 @@ endif()
+ list(APPEND LIBS "${GL_LIBRARY}")
+ 
+ # Platform-specific extra libs
+-if(NOT EXTRA_LIBRARIES)
++if(NOT EXTRA_LIBRARIES AND NOT EMSCRIPTEN)
+   if(WIN32)
+     set(EXTRA_LIBRARIES dbghelp -static-libstdc++)
+   elseif(NINTENDO_SWITCH)
+@@ -348,6 +365,20 @@ set_target_properties(pd PROPERTIES OUTPUT_NAME "${BIN_NAME}")
+ if(WIN32)
+   set_target_properties(pd PROPERTIES WIN32_EXECUTABLE TRUE)
+ endif()
++if(EMSCRIPTEN)
++  set(PD_WEB_LINK_FLAGS "" CACHE STRING "extra emscripten link flags")
++  set_target_properties(pd PROPERTIES SUFFIX ".js")
++  target_link_options(pd PRIVATE
++    -sUSE_SDL=2 -sUSE_ZLIB=1
++    -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 -sFULL_ES3=1 -sGL_ENABLE_GET_PROC_ADDRESS=1
++    -sASYNCIFY=1 -sASYNCIFY_STACK_SIZE=131072
++    -sALLOW_MEMORY_GROWTH=1 -sINITIAL_MEMORY=268435456 -sSTACK_SIZE=4194304
++    -sFORCE_FILESYSTEM=1 -lidbfs.js
++    -sEXPORTED_RUNTIME_METHODS=callMain,FS,IDBFS,addRunDependency,removeRunDependency
++    -sEXIT_RUNTIME=0 -sENVIRONMENT=web
++    ${PD_WEB_LINK_FLAGS}
++  )
++endif()
+ 
+ # Additional commands for specific platforms.
+ 
+diff --git a/cmake/AssetUtils.cmake b/cmake/AssetUtils.cmake
+index 0a518b0..b7a7ebd 100644
+--- a/cmake/AssetUtils.cmake
++++ b/cmake/AssetUtils.cmake
+@@ -18,7 +18,7 @@ macro(generate_asset_headers jsonpath execcmd extraarg headerlist)
+     add_custom_command(
+       OUTPUT  ${HEADERNAME}
+       DEPENDS ${JSON}
+-      COMMAND ${execcmd} ${JSON} ${extraarg} --headers-only --romid=${ROMID}
++      COMMAND ${PD_PYTHON} ${execcmd} ${JSON} ${extraarg} --headers-only --romid=${ROMID}
+     )
+     list(APPEND ${headerlist} "${HEADERNAME}")
+   endforeach()
+diff --git a/port/fast3d/gfx_opengl.cpp b/port/fast3d/gfx_opengl.cpp
+index db5cfbf..4930fcc 100644
+--- a/port/fast3d/gfx_opengl.cpp
++++ b/port/fast3d/gfx_opengl.cpp
+@@ -250,7 +250,7 @@ static struct ShaderProgram* gfx_opengl_create_and_load_new_shader(uint64_t shad
+     vs_len += sprintf(vs_buf + vs_len, "#version %s\n", gl_glsl_version_str);
+ 
+     if (gl_es) {
+-        append_line(vs_buf, &vs_len, "precision mediump float;");
++        append_line(vs_buf, &vs_len, "precision highp float;");
+     }
+ 
+     if (gl_glsl_version >= 130) {
+@@ -329,7 +329,7 @@ static struct ShaderProgram* gfx_opengl_create_and_load_new_shader(uint64_t shad
+     fs_len += sprintf(fs_buf + fs_len, "#version %s\n", gl_glsl_version_str);
+ 
+     if (gl_es) {
+-        append_line(fs_buf, &fs_len, "precision mediump float;");
++        append_line(fs_buf, &fs_len, "precision highp float;");
+     }
+ 
+     if (gl_glsl_version >= 130) {
+@@ -348,7 +348,7 @@ static struct ShaderProgram* gfx_opengl_create_and_load_new_shader(uint64_t shad
+ 
+     append_line(fs_buf, &fs_len, "#define TEX_OFFSET(tex, uv, texSize, off) SAMPLE_TEX(tex, uv - (off)/texSize)");
+ 
+-    // append_line(fs_buf, &fs_len, "precision mediump float;");
++    // append_line(fs_buf, &fs_len, "precision highp float;");
+     for (int i = 0; i < 2; i++) {
+         if (cc_features.used_textures[i]) {
+             fs_len += sprintf(fs_buf + fs_len, "INPUT vec2 vTexCoord%d;\n", i);
+diff --git a/port/fast3d/gfx_sdl2.cpp b/port/fast3d/gfx_sdl2.cpp
+index f967cb8..61cad46 100644
+--- a/port/fast3d/gfx_sdl2.cpp
++++ b/port/fast3d/gfx_sdl2.cpp
+@@ -4,6 +4,22 @@
+ #include <time.h>
+ 
+ #include "platform.h"
++#ifdef __EMSCRIPTEN__
++#include <emscripten.h>
++// yield to the browser until the next animation frame that is at least ~1/60 s after the last one
++EM_ASYNC_JS(void, web_wait_frame, (double min_ms), {
++    const now0 = performance.now();
++    if (!Module.__pdLastFrame) Module.__pdLastFrame = now0;
++    for (;;) {
++        const t = await new Promise(r => requestAnimationFrame(r));
++        if (t - Module.__pdLastFrame >= min_ms || t - Module.__pdLastFrame < 0) break;
++    }
++    const t1 = performance.now();
++    // keep a steady cadence; resync if we fell far behind
++    Module.__pdLastFrame = (t1 - Module.__pdLastFrame > 50) ? t1 : Module.__pdLastFrame + 1000 / 60;
++    if (Module.onPdFrame) Module.onPdFrame();
++});
++#endif
+ #include "system.h"
+ 
+ #include "gfx_window_manager_api.h"
+@@ -147,6 +163,9 @@ static void gfx_sdl_init(const struct GfxWindowInitSettings *set) {
+     // if that doesn't work, try 3.2 core in case we're on mac, 2.1 compat as a last resort
+     static u32 glver[][3] = {
+         { 0, 0, 0                                    }, // for command line override
++#ifdef __EMSCRIPTEN__
++        { 3, 0, SDL_GL_CONTEXT_PROFILE_ES            }, // WebGL2
++#endif
+         { 3, 0, SDL_GL_CONTEXT_PROFILE_COMPATIBILITY }, // 3.0: default, has all the features required
+         { 4, 1, SDL_GL_CONTEXT_PROFILE_CORE          }, // 4.1core: macs only have core profile and this is the latest
+         { 3, 2, SDL_GL_CONTEXT_PROFILE_CORE          }, // 3.2core: older macs will only have this at best
+@@ -354,6 +373,11 @@ static inline void sync_framerate_with_timer(void) {
+ }
+ 
+ static void gfx_sdl_swap_buffers_begin(void) {
++#ifdef __EMSCRIPTEN__
++    SDL_GL_SwapWindow(wnd);
++    web_wait_frame(1000.0 / 60.0 - 2.0);
++    return;
++#endif
+     if (target_fps) {
+         sync_framerate_with_timer();
+     }
+diff --git a/port/src/romdata.c b/port/src/romdata.c
+index a8e3f5b..1beee0f 100644
+--- a/port/src/romdata.c
++++ b/port/src/romdata.c
+@@ -192,6 +192,14 @@ static inline void romdataLoadRom(void)
+ {
+ 	sysLogPrintf(LOG_NOTE, "ROM file: %s", romName);
+ 
++	if (fsFileSize(romName) <= 0 && fsFileSize("filenames.lst") > 0) {
++		// no ROM: run entirely from external segs/, files/ and filenames.lst
++		sysLogPrintf(LOG_NOTE, "no ROM file, using external data pack");
++		g_RomFile = NULL;
++		g_RomFileSize = 0;
++		return;
++	}
++
+ 	g_RomFile = fsFileLoad(romName, &g_RomFileSize);
+ 
+ 	if (!g_RomFile) {
+@@ -494,8 +502,10 @@ u8 *romdataFileLoad(s32 fileNum, u32 *outSize)
+ 				fileSlots[fileNum].numpatches = 0;
+ 			}
+ 		}
+-		// tried and failed, fall back to ROM
+-		fileSlots[fileNum].source = SRC_ROM;
++		if (!out) {
++			// tried and failed, fall back to ROM
++			fileSlots[fileNum].source = SRC_ROM;
++		}
+ 	}
+ 
+ 	if (!out) {
+@@ -541,8 +551,8 @@ void romdataFileFree(s32 fileNum)
+ 	}
+ 
+ 	if (fileSlots[fileNum].source == SRC_EXTERNAL) {
+-		sysMemFree(fileSlots[fileNum].data);
+-		fileSlots[fileNum].data = NULL;
++		// keep external files cached: callers may still hold pointers into them
++		return;
+ 	}
+ 
+ 	fileSlots[fileNum].source = SRC_UNLOADED;
+diff --git a/src/game/rng2_c.c b/src/game/rng2_c.c
+index d14a68c..b6d624f 100644
+--- a/src/game/rng2_c.c
++++ b/src/game/rng2_c.c
+@@ -21,7 +21,7 @@ u32 random2(void)
+ /**
+  * Set the given seed as the RNG seed. Add 1 to make sure it isn't 0.
+  */
+-void rng2SetSeed(u64 seed)
++void rng2SetSeed(u32 seed)
+ {
+ 	g_Rng2Seed = seed + 1;
+ }
+diff --git a/src/include/platform.h b/src/include/platform.h
+index 79a1864..e393d9f 100644
+--- a/src/include/platform.h
++++ b/src/include/platform.h
+@@ -13,6 +13,9 @@
+ #elif defined(__APPLE__)
+ 	#define PLATFORM_POSIX 1
+ 	#define PLATFORM_OSX 1
++#elif defined(__EMSCRIPTEN__)
++	#define PLATFORM_POSIX 1
++	#define PLATFORM_WEB 1
+ #else
+ 	// assume POSIX-compatible
+ 	#define PLATFORM_POSIX 1
+@@ -31,6 +34,8 @@
+ #elif defined(__arm__) || defined(_M_ARM)
+ 	// assume armv7
+ 	#define PLATFORM_ARM 7
++#elif defined(__wasm32__)
++	#define PLATFORM_WASM 1
+ #else
+ 	#error "Unknown CPU arch."
+ #endif
+diff --git a/src/lib/rng_c.c b/src/lib/rng_c.c
+index 23ff7b6..f4076df 100644
+--- a/src/lib/rng_c.c
++++ b/src/lib/rng_c.c
+@@ -21,7 +21,7 @@ u32 rngRandom(void)
+ /**
+  * Set the given seed as the RNG seed. Add 1 to make sure it isn't 0.
+  */
+-void rngSetSeed(u64 seed)
++void rngSetSeed(u32 seed)
+ {
+ 	g_RngSeed = seed + 1;
+ }
