@@ -42,13 +42,12 @@
 - Mission-select thumbnails (0x385, 0x617-0x626, 0x63c, 0xb4f-0xb52; 56x36): render from level geometry
 - Controller diagram (0xda0-0xda3), radar (0x3c), menu icons: draw procedurally
 
-## Blocked / stopped (2026-09-26 ~01:30)
-- Claude Code stopped two background jobs because the machine ran critically low on memory (other sessions:
-  one mupen64plus process had ~20 GB committed). Per the harness note they are NOT restarted automatically:
-  1. voice transcription `python -m games.pd.extract_voices <dirty audio> games/pd/spec` (resumable; 378/548 saved
-     in spec/voices.partial.jsonl; rerun continues from there, then `python -m games.pd.voices build`)
-  2. taint veto loop `python -m games.pd.reseed <rom> D:/n64work/pd/pack` (textures already 0 failing after one
-     re-roll; this run adds model textures to the veto loop)
+## Incidents
+- ~01:30 two background jobs reaped for low machine memory (other sessions); restarted after the user said "keep on going".
+- ~05:40 the D: drive dropped out of Windows (all sessions); came back intact. Afterwards a private backup repo
+  andrewnakas/pd-cleanroom was created and pushed so the work is not only on D:.
+- Clean site boots through intro -> title -> "Choose Your Reality" -> name entry (Pmisc_irspecsZ crash fixed by
+  bounding embedded textures at the next data pointer).
 
 ## For the morning
 - Say "go" to restart the two stopped jobs above if memory allows (or restart them yourself; both resume).
