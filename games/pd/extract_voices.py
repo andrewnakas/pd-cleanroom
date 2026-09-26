@@ -37,15 +37,25 @@ def load(path):
 def main(argv):
     src, spec = argv[:2]
     from faster_whisper import WhisperModel
-    model = WhisperModel("small.en", device="cpu", compute_type="int8", cpu_threads=8)
+    model = WhisperModel("small.en", device="cpu", compute_type="int8", cpu_threads=6)
+    part = os.path.join(spec, "voices.partial.jsonl")
     out = {}
+    if os.path.exists(part):
+        for ln in open(part):
+            k, v = json.loads(ln)
+            out[k] = v
     names = sorted(os.listdir(src))
     for i, fn in enumerate(names):
+        if fn in out:
+            continue
         x, rate, n = load(os.path.join(src, fn))
         segs, _ = model.transcribe(x, language="en", beam_size=5, vad_filter=False)
         text = " ".join(s.text.strip() for s in segs).strip()
         f0 = median_f0(x.astype(np.float32), 16000)
         out[fn] = {"secs": round(n / rate, 3), "rate": rate, "text": text, "f0": round(float(f0), 1) if f0 else None}
+        with open(part, "a") as fp:
+            fp.write(json.dumps([fn, out[fn]]) + "
+")
         if i % 50 == 0:
             print(i, fn, out[fn], flush=True)
     json.dump(out, open(os.path.join(spec, "voices.json"), "w"), indent=0)

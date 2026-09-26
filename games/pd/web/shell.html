@@ -35,6 +35,9 @@
 <div id="status"></div>
 <script>
 var Q = new URLSearchParams(location.search);
+function logErr(e) { console.log('PDERROR ' + (e && (e.stack || e.message) || e).toString().split(String.fromCharCode(10)).join(' | ')); }
+window.addEventListener('error', function (ev) { logErr(ev.error || ev.message); });
+window.addEventListener('unhandledrejection', function (ev) { logErr(ev.reason); });
 var statusEl = document.getElementById('status');
 var Module = {
   canvas: document.getElementById('canvas'),

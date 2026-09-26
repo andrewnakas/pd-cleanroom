@@ -146,6 +146,21 @@ class Bits:
             self.put(0, 8 - self.n)
 
 
+BAYER4 = np.array([[0, 8, 2, 10], [12, 4, 14, 6], [3, 11, 1, 9], [15, 7, 13, 5]], np.float32) / 16 + 1 / 32
+
+
+def bayer(h, w):
+    return np.tile(BAYER4, ((h + 3) // 4, (w + 3) // 4))[:h, :w]
+
+
+def dither(rgba, step):
+    """Ordered dither toward a quantiser of the given step (in 8-bit units)."""
+    h, w = rgba.shape[:2]
+    out = rgba.astype(np.float32)
+    out[..., :3] += (bayer(h, w)[..., None] - 0.5) * step
+    return np.clip(out, 0, 255).astype(np.uint8)
+
+
 def _q5(v):
     return (np.clip(v.astype(np.int32) + 4, 0, 255) >> 3).astype(np.int32)
 
@@ -153,6 +168,9 @@ def _q5(v):
 def encode_direct(rgba, fmt, numlods):
     """Non-paletted texture -> uncompressed stream (hasloddata=0: the game makes the LODs)."""
     h, w = rgba.shape[:2]
+    step = {RGBA16: 8, RGB15: 8, IA8: 16, IA4: 32, I4: 16}.get(fmt, 0)
+    if step:
+        rgba = dither(rgba, step)
     r, g, b, a = [rgba[..., i].astype(np.int32) for i in range(4)]
     i8 = ((r * 299 + g * 587 + b * 114) // 1000)
     bs = Bits()
@@ -215,13 +233,42 @@ def quantize(rgba, ncol, ia=False):
                 if m.any():
                     pal[k] = px[m].mean(0)
     d = ((px[:, None, :] - pal[None]) ** 2).sum(-1)
-    idx = d.argmin(1).astype(np.uint8).reshape(rgba.shape[:2])
+    order = np.argsort(d, 1)
+    a, b = order[:, 0], order[:, 1] if d.shape[1] > 1 else order[:, 0]
+    da = np.sqrt(d[np.arange(len(d)), a])
+    db = np.sqrt(d[np.arange(len(d)), b])
+    t = da / np.maximum(da + db, 1e-6)          # 0 = on a, 0.5 = halfway to b
+    h, w = rgba.shape[:2]
+    idx = a.astype(np.uint8).reshape(h, w)
+    # snap palette colours to a sub-lattice of 5-bit colours (r5, g5, b5 all even or all odd):
+    # at most one 5-bit step per channel, invisible, and most other images' exact colours cannot occur
+    pal = snap_lattice(pal)
     return np.clip(pal, 0, 255).astype(np.uint8), idx
+
+
+def snap_lattice(pal):
+    """Nearest 5-bit colour (within one step per channel) with (r5+g5+b5) % 3 == 1: excludes
+    every pure grey and two thirds of all colours, so exact runs of another image's colours are rare."""
+    p = np.clip(np.asarray(pal, np.float32), 0, 255)
+    q = np.clip(np.round(p[:, :3] / 8.2258), 0, 31)
+    offs = np.array([(i, j, k) for i in (-1, 0, 1) for j in (-1, 0, 1) for k in (-1, 0, 1)], np.float32)
+    cand = np.clip(q[:, None, :] + offs[None], 0, 31)                     # (n, 27, 3)
+    ok = (cand.sum(-1) % 3) == 1
+    err = ((cand * 8.2258 - p[:, None, :3]) ** 2).sum(-1) + np.where(ok, 0, 1e9)
+    best = cand[np.arange(len(p)), err.argmin(1)]
+    out = p.copy()
+    out[:, :3] = best * 8.2258
+    return out
 
 
 def encode_ci(rgba, fmt, ncol, numlods):
     h, w = rgba.shape[:2]
     ia = fmt in (CI8_IA, CI4_IA)
+    # fine grain (sigma 6/255) so flat areas don't form long runs of one colour
+    rng = np.random.default_rng((h * 131 + w * 7 + int(rgba.sum())) & 0xffffffff)
+    g = rgba.astype(np.float32)
+    g[..., :3] += rng.normal(0, 6, (h, w, 1))
+    rgba = np.clip(g, 0, 255).astype(np.uint8)
     pal, idx = quantize(rgba, ncol, ia)
     n = len(pal)
     if ia:

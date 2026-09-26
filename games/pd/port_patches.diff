@@ -241,6 +241,29 @@ index a8e3f5b..1beee0f 100644
  	}
  
  	fileSlots[fileNum].source = SRC_UNLOADED;
+diff --git a/src/game/file.c b/src/game/file.c
+index 95e486c..c391f2d 100644
+--- a/src/game/file.c
++++ b/src/game/file.c
+@@ -4174,6 +4174,18 @@ void fileLoad(u8 *dst, u32 allocationlen, romptr_t *romaddrptr, struct fileinfo
+ 	if (allocationlen == 0) {
+ 		// DMA with no inflate
+ 		dmaExec(dst, *romaddrptr, romsize);
++#ifndef PLATFORM_N64
++	} else if (rzipIs1173(filedata)) {
++		// the file is already in memory: inflate straight from it instead of in place at the end of dst,
++		// so a compressed stream not tuned for in-place inflation (e.g. a regenerated file) can't be overrun
++		const u32 inflen = ((u32)filedata[2] << 16) | ((u32)filedata[3] << 8) | (u32)filedata[4];
++		if (inflen > allocationlen) {
++			sysLogPrintf(LOG_ERROR, "fileLoad: file %d inflates to %u bytes, only %u allocated", filenum, inflen, allocationlen);
++			info->loadedsize = 0;
++		} else {
++			info->loadedsize = ALIGN16(rzipInflate(filedata, dst, buffer));
++		}
++#endif
+ 	} else {
+ 		// DMA the compressed data to scratch space then inflate
+ 		u8 *scratch = (dst + allocationlen) - ((romsize + 7) & (uintptr_t)~7);
 diff --git a/src/game/rng2_c.c b/src/game/rng2_c.c
 index d14a68c..b6d624f 100644
 --- a/src/game/rng2_c.c
@@ -277,6 +300,24 @@ index 79a1864..e393d9f 100644
  #else
  	#error "Unknown CPU arch."
  #endif
+diff --git a/src/lib/mp3.c b/src/lib/mp3.c
+index 37e3de3..5a688be 100644
+--- a/src/lib/mp3.c
++++ b/src/lib/mp3.c
+@@ -99,6 +99,13 @@ void mp3PlayFile(uintptr_t romaddr, s32 filesize)
+ 		return;
+ 	}
+ 
++#ifndef PLATFORM_N64
++	if (romaddr == 0 || filesize <= 0) {
++		// missing file in an external data pack: play nothing
++		return;
++	}
++#endif
++
+ 	g_Mp3Vars.romaddr = romaddr;
+ 	g_Mp3Vars.filesize = filesize;
+ 	g_Mp3Vars.var8009c3c4 = 0;
 diff --git a/src/lib/rng_c.c b/src/lib/rng_c.c
 index 23ff7b6..f4076df 100644
 --- a/src/lib/rng_c.c

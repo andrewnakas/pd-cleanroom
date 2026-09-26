@@ -76,5 +76,9 @@ def decode(buf, tc):
 
 
 def encode(rgba, tc):
+    from games.pd.pdtex import dither
+    step = {2: 8, 1: 16, 0: 32}.get(tc["siz"], 0) if tc["fmt"] in (0, 3, 4) else 0
+    if step:
+        rgba = dither(rgba, step)
     raw = _padded(texfmt.encode(rgba, tc["fmt"], tc["siz"]), tc["w"], tc["h"], tc["siz"])
     return swizzle(raw, tc["w"], tc["h"], tc["siz"])
