@@ -1,5 +1,5 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index f5bb7eb..d8fceac 100644
+index f5bb7eb..3ab14ed 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -16,6 +16,7 @@ project(pd C CXX)
@@ -34,7 +34,18 @@ index f5bb7eb..d8fceac 100644
    # Windows
    set(TARGET_OS "windows")
  elseif(APPLE)
-@@ -210,6 +217,15 @@ endif()
+@@ -163,8 +170,9 @@ include_directories("${CMAKE_SOURCE_DIR}/port/include")
+ include_directories("${CMAKE_BINARY_DIR}/port/include")
+ 
+ # Set Release optimization to -Og until I fix the -O2 issues
++set(PD_OPT_LEVEL "-Og" CACHE STRING "optimisation flag for non-Debug builds")
+ if(NOT (CMAKE_BUILD_TYPE STREQUAL "Debug"))
+-  add_compile_options(-Og)
++  add_compile_options(${PD_OPT_LEVEL})
+ endif()
+ 
+ # Common CFLAGS
+@@ -210,6 +218,15 @@ endif()
  
  set(LIBS )
  
@@ -50,7 +61,7 @@ index f5bb7eb..d8fceac 100644
  # SDL2
  find_package(SDL2 REQUIRED)
  if(NINTENDO_SWITCH)
-@@ -228,9 +244,10 @@ if(ZLIB_INCLUDE_DIR)
+@@ -228,9 +245,10 @@ if(ZLIB_INCLUDE_DIR)
    include_directories(SYSTEM "${ZLIB_INCLUDE_DIR}")
  endif()
  list(APPEND LIBS "${ZLIB_LIBRARY}")
@@ -62,7 +73,7 @@ index f5bb7eb..d8fceac 100644
    if(WIN32)
      set(GL_LIBRARY opengl32)
    elseif(NINTENDO_SWITCH)
-@@ -244,7 +261,7 @@ endif()
+@@ -244,7 +262,7 @@ endif()
  list(APPEND LIBS "${GL_LIBRARY}")
  
  # Platform-specific extra libs
@@ -71,7 +82,7 @@ index f5bb7eb..d8fceac 100644
    if(WIN32)
      set(EXTRA_LIBRARIES dbghelp -static-libstdc++)
    elseif(NINTENDO_SWITCH)
-@@ -348,6 +365,20 @@ set_target_properties(pd PROPERTIES OUTPUT_NAME "${BIN_NAME}")
+@@ -348,6 +366,20 @@ set_target_properties(pd PROPERTIES OUTPUT_NAME "${BIN_NAME}")
  if(WIN32)
    set_target_properties(pd PROPERTIES WIN32_EXECUTABLE TRUE)
  endif()
@@ -137,10 +148,10 @@ index db5cfbf..4930fcc 100644
          if (cc_features.used_textures[i]) {
              fs_len += sprintf(fs_buf + fs_len, "INPUT vec2 vTexCoord%d;\n", i);
 diff --git a/port/fast3d/gfx_sdl2.cpp b/port/fast3d/gfx_sdl2.cpp
-index f967cb8..61cad46 100644
+index f967cb8..e533517 100644
 --- a/port/fast3d/gfx_sdl2.cpp
 +++ b/port/fast3d/gfx_sdl2.cpp
-@@ -4,6 +4,22 @@
+@@ -4,6 +4,24 @@
  #include <time.h>
  
  #include "platform.h"
@@ -150,6 +161,7 @@ index f967cb8..61cad46 100644
 +EM_ASYNC_JS(void, web_wait_frame, (double min_ms), {
 +    const now0 = performance.now();
 +    if (!Module.__pdLastFrame) Module.__pdLastFrame = now0;
++    if (Module.__pdResume) Module.pdWorkMs = (Module.pdWorkMs || 0) * 0.95 + (now0 - Module.__pdResume) * 0.05;
 +    for (;;) {
 +        const t = await new Promise(r => requestAnimationFrame(r));
 +        if (t - Module.__pdLastFrame >= min_ms || t - Module.__pdLastFrame < 0) break;
@@ -158,12 +170,13 @@ index f967cb8..61cad46 100644
 +    // keep a steady cadence; resync if we fell far behind
 +    Module.__pdLastFrame = (t1 - Module.__pdLastFrame > 50) ? t1 : Module.__pdLastFrame + 1000 / 60;
 +    if (Module.onPdFrame) Module.onPdFrame();
++    Module.__pdResume = performance.now();
 +});
 +#endif
  #include "system.h"
  
  #include "gfx_window_manager_api.h"
-@@ -147,6 +163,9 @@ static void gfx_sdl_init(const struct GfxWindowInitSettings *set) {
+@@ -147,6 +165,9 @@ static void gfx_sdl_init(const struct GfxWindowInitSettings *set) {
      // if that doesn't work, try 3.2 core in case we're on mac, 2.1 compat as a last resort
      static u32 glver[][3] = {
          { 0, 0, 0                                    }, // for command line override
@@ -173,7 +186,7 @@ index f967cb8..61cad46 100644
          { 3, 0, SDL_GL_CONTEXT_PROFILE_COMPATIBILITY }, // 3.0: default, has all the features required
          { 4, 1, SDL_GL_CONTEXT_PROFILE_CORE          }, // 4.1core: macs only have core profile and this is the latest
          { 3, 2, SDL_GL_CONTEXT_PROFILE_CORE          }, // 3.2core: older macs will only have this at best
-@@ -354,6 +373,11 @@ static inline void sync_framerate_with_timer(void) {
+@@ -354,6 +375,11 @@ static inline void sync_framerate_with_timer(void) {
  }
  
  static void gfx_sdl_swap_buffers_begin(void) {

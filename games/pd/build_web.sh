@@ -9,7 +9,7 @@ export PATH="$HOME/bin:/e/n64web/emsdk/upstream/emscripten:/e/n64web/emsdk/upstr
 export EM_CACHE=E:/n64web/emcache EMSDK=E:/n64web/emsdk
 mkdir -p "$B"
 if [ ! -f "$B/CMakeCache.txt" ]; then
-  emcmake.exe cmake -G Ninja -S "$SRC" -B "$B" -DCMAKE_BUILD_TYPE="$TYPE" -DPD_PYTHON=python \
+  emcmake.exe cmake -G Ninja -S "$SRC" -B "$B" -DCMAKE_BUILD_TYPE="$TYPE" -DPD_PYTHON=python "-DPD_OPT_LEVEL=${PD_OPT:--Og}" \
     "-DPD_WEB_LINK_FLAGS=${PD_WEB_LINK_FLAGS:-}" > "$B/build_web.log" 2>&1 || { tail -20 "$B/build_web.log"; exit 1; }
 fi
 cmake --build "$B" -j 12 >> "$B/build_web.log" 2>&1

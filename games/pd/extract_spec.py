@@ -102,7 +102,22 @@ def sheet(res, out, cell=40, cols=64):
     png.write(out, img)
 
 
+def audio_spec(assets, spec):
+    from games.pd import pdaudio
+    for name in ("sfx", "seq"):
+        ctl = open(os.path.join(assets, name + ".ctl"), "rb").read()
+        tbl = open(os.path.join(assets, name + ".tbl"), "rb").read()
+        ws = pdaudio.waves(ctl)
+        facts = {"%x" % wo: pdaudio.fact(ctl, tbl, w) for wo, w in sorted(ws.items())}
+        json.dump({"tbl_size": len(tbl), "waves": facts}, open(os.path.join(spec, name + "_bank.json"), "w"),
+                  separators=(",", ":"))
+        print("%s: %d waves, %d looped, npred %s" % (name, len(facts), sum(1 for f in facts.values() if "loop" in f),
+                                                    sorted({f["npred"] for f in facts.values()})))
+
+
 def main(argv):
+    if argv[0] == "audio":
+        return audio_spec(argv[1], argv[2])
     assets, dump, spec = argv[:3]
     res = decode_all(assets, dump)
     os.makedirs(spec, exist_ok=True)
