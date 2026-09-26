@@ -1,0 +1,12 @@
+{
+  "_doc": "Text-bearing textures, re-typeset. Words transcribed from one look at the dirty sheet. flip_v: stored upside down. ink/bg: colours (bg null = transparent, the text is the alpha).",
+  "0a1f": {"text": "SECTOR ONE", "flip_v": true, "ink": [20, 20, 22], "bg": null},
+  "0ae2": {"text": "SECTOR TWO", "flip_v": true, "ink": [20, 20, 22], "bg": null},
+  "0ae3": {"text": "SECTOR THREE", "flip_v": true, "ink": [20, 20, 22], "bg": null},
+  "0ae4": {"text": "SECTOR FOUR", "flip_v": true, "ink": [20, 20, 22], "bg": null},
+  "0ae5": {"text": "RESTRICTED", "flip_v": true, "ink": [20, 20, 22], "bg": null},
+  "0bdb": {"text": "HAZARDOUS", "flip_v": true, "ink": [20, 20, 22], "bg": null},
+  "0a9a": {"text": "SURROUND|SOUND", "flip_v": true, "ink": [235, 235, 235], "bg": null},
+  "0227": {"text": "POLICE", "flip_v": true, "ink": [235, 235, 245], "bg": [30, 30, 150]},
+  "08bb": {"text": "SECURITY", "flip_v": true, "ink": [220, 220, 235], "bg": [60, 60, 110], "band": [230, 190, 30]}
+}
